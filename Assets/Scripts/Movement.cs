@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
         }
         else 
         { 
-            playerRigidbody.velocityX = playerRigidbody.velocityX*Mathf.Abs(moveDirection) + moveSpeed/50*moveDirection;
+            playerRigidbody.velocityX = playerRigidbody.velocityX*Mathf.Abs(moveDirection) + moveSpeed/20*moveDirection;
         }
         playerAnimator.SetBool("isWalking", true);
     }
