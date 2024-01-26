@@ -1,0 +1,55 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class Movement : MonoBehaviour
+{
+    [SerializeField] protected float moveSpeed;
+
+    float moveDirection;
+    protected Rigidbody2D playerRigidbody;
+    protected Animator playerAnimator;
+    void OnMove(InputValue direction)
+    {
+        moveDirection = direction.Get<Vector2>().x;
+    }
+    void Awake()
+    {
+        playerRigidbody = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    virtual protected void Update()
+    {
+        PlayerMove();
+        PlayerFlip();
+    }
+
+    void PlayerMove()
+    {
+        if (Mathf.Abs(playerRigidbody.velocityX) >= moveSpeed) 
+        { 
+            playerRigidbody.velocityX = moveSpeed * moveDirection; 
+        }
+        else 
+        { 
+            playerRigidbody.velocityX = playerRigidbody.velocityX*Mathf.Abs(moveDirection) + moveSpeed/50*moveDirection;
+        }
+        playerAnimator.SetBool("isWalking", true);
+    }
+
+    void PlayerFlip()
+    {
+        if (playerRigidbody.velocityX != 0)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(playerRigidbody.velocityX), 1f);
+        }
+        else
+        {
+            playerAnimator.SetBool("isWalking", false);
+        }
+
+    }
+}
