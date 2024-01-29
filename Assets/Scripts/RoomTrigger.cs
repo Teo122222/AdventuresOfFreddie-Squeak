@@ -24,7 +24,7 @@ public class RoomTrigger : MonoBehaviour
             if ((collision.gameObject.tag == "Freddie" && GameObject.FindWithTag("Squeak").GetComponent<PlayerLogic>().GetRoom() == roomType)
                 || (collision.gameObject.tag == "Squeak" && GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == roomType))
             {
-                Debug.Log("Dead!!!");
+                FindAnyObjectByType<GameManager>().RestartLevel();
             }
         }
     }

@@ -8,7 +8,7 @@ public class WaterTrigger : MonoBehaviour
     {
         if (collision.tag == "Freddie")
         {
-            Debug.Log("Dead!");
+            FindAnyObjectByType<GameManager>().RestartLevel();
         }
     }
 
