@@ -12,17 +12,22 @@ public class FreddieMovement : Movement
     EdgeCollider2D feetCollider;
     float coyoteTimeCounter;
     float jumpBufferCounter;
+    bool isHolding;
     void OnJump(InputValue v)
     {
         if (v.isPressed)
         {
             jumpBufferCounter = jumpBufferTime;
+            isHolding = true;
         }
-        else if (!v.isPressed && coyoteTimeCounter > 0f)
+        else if (!v.isPressed)
         {
-            playerRigidbody.velocityY *= 0.5f;
-            coyoteTimeCounter = 0;
-            
+            if (coyoteTimeCounter > 0f)
+            {
+                playerRigidbody.velocityY *= 0.5f;
+                coyoteTimeCounter = 0;
+            }
+            isHolding = false;
         }
     }
     void Start()
@@ -41,6 +46,8 @@ public class FreddieMovement : Movement
         if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             coyoteTimeCounter = coyoteTime;
+
+            if (isHolding) jumpBufferCounter = jumpBufferTime;
         }
         else
         {

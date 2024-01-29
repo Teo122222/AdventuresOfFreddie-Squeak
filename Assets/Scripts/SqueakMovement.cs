@@ -12,11 +12,17 @@ public class Squeak : Movement
     EdgeCollider2D feetCollider;
     float jumpBufferCounter;
     float jumpTimeCounter;
+    bool isHolding;
     void OnJump(InputValue v)
     {
         if (v.isPressed)
         {
             jumpBufferCounter = jumpBufferTime;
+            isHolding = true;
+        }
+        else if (!v.isPressed)
+        {
+            isHolding = false;
         }
     }
     void Start()
@@ -32,7 +38,6 @@ public class Squeak : Movement
 
     void SqueakJump()
     {
-        jumpBufferCounter -= Time.deltaTime;
         if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             if (jumpBufferCounter > 0f)
@@ -41,7 +46,10 @@ public class Squeak : Movement
                 jumpBufferCounter = 0f;
                 jumpTimeCounter = jumpTime;
             }
+            if (isHolding) jumpBufferCounter = jumpBufferTime;
+            
         }
+        jumpBufferCounter -= Time.deltaTime;
         if (jumpTimeCounter < 0)
         {
             playerRigidbody.velocityY *= 0.5f;
