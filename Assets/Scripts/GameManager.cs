@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayAnimationAndLoadLevel()
     {
         fadeAnimation.SetTrigger("StartTransistion");
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     } 
 
