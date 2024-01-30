@@ -5,26 +5,40 @@ using UnityEngine;
 public class RoomTrigger : MonoBehaviour
 {
     [SerializeField] string roomType;
+
+    bool isRestarting;
+    int shouldCheck = 0;
+
+    void Awake()
+    {
+        isRestarting = false;
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        HandleTrigger(collision);
+        shouldCheck++;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
         HandleTrigger(collision);
+        shouldCheck--;
     }
 
     void HandleTrigger(Collider2D collision)
     {
-        PlayerLogic player = collision.gameObject.GetComponent<PlayerLogic>();
-        if (player.GetRoom() != roomType)
+        if (!isRestarting && shouldCheck % 2 == 0)
         {
-            player.SetRoom(roomType);
-            if ((collision.gameObject.tag == "Freddie" && GameObject.FindWithTag("Squeak").GetComponent<PlayerLogic>().GetRoom() == roomType)
-                || (collision.gameObject.tag == "Squeak" && GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == roomType))
+            PlayerLogic player = collision.gameObject.GetComponent<PlayerLogic>();
+            if (player.GetRoom() != roomType)
             {
-                FindAnyObjectByType<GameManager>().RestartLevel();
+                player.SetRoom(roomType);
+                if ((collision.tag == "Freddie" && GameObject.FindWithTag("Squeak").GetComponent<PlayerLogic>().GetRoom() == roomType)
+                    || (collision.tag == "Squeak" && GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == roomType))
+                {
+                    FindAnyObjectByType<GameManager>().RestartLevel();
+                    isRestarting = true;
+                }
             }
         }
     }
