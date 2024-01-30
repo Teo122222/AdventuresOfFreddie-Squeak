@@ -38,7 +38,10 @@ public class FreddieMovement : Movement
     override protected void Update()
     {
         base.Update();
-        FreddieJump();
+        if (isAlive)
+        {
+            FreddieJump();
+        }
     }
 
     void FreddieJump()

@@ -33,7 +33,10 @@ public class Squeak : Movement
     override protected void Update()
     {
         base.Update();
-        SqueakJump();
+        if (isAlive)
+        {
+            SqueakJump();
+        }
     }
 
     void SqueakJump()

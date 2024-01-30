@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] protected float moveSpeed;
 
+    protected bool isAlive = true;
     float moveDirection;
     protected Rigidbody2D playerRigidbody;
     protected Animator playerAnimator;
@@ -23,8 +24,11 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     virtual protected void Update()
     {
-        PlayerMove();
-        PlayerFlip();
+        if (isAlive)
+        {
+            PlayerMove();
+            PlayerFlip();
+        }
     }
 
     void PlayerMove()
@@ -51,5 +55,12 @@ public class Movement : MonoBehaviour
             playerAnimator.SetBool("isWalking", false);
         }
 
+    }
+
+    public void Die()
+    {
+        isAlive = false;
+        playerRigidbody.velocity = new Vector2(0f, 0f);
+        playerAnimator.SetBool("isWalking", false);
     }
 }
