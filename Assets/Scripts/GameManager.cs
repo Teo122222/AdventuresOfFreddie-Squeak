@@ -6,16 +6,24 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Animator fadeAnimation;
-    [SerializeField] Movement Freddie;
-    [SerializeField] Movement Squeak;
+    [SerializeField] GameObject Freddie;
+    [SerializeField] GameObject Squeak;
+
+    Collider2D freddieCollider;
+    Collider2D squeakCollider;
+    bool isRestarting = false;
     void Start()
     {
-        
+        freddieCollider = Freddie.GetComponent<Collider2D>();
+        squeakCollider = Squeak.GetComponent<Collider2D>();
     }
 
     void Update()
     {
-        
+        if (freddieCollider.IsTouching(squeakCollider) && !isRestarting)
+        {
+            RestartLevel();
+        }
     }
 
     public void RestartLevel()
@@ -25,8 +33,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayAnimationAndLoadLevel()
     {
-        Squeak.Die();
-        Freddie.Die();
+        Squeak.GetComponent<Movement>().Die();
+        Freddie.GetComponent<Movement>().Die();
         fadeAnimation.SetTrigger("StartTransistion");
         yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

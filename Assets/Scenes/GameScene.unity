@@ -938,6 +938,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
   m_PrefabInstance: {fileID: 1470588844}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1287529219 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5078684482761003514, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+  m_PrefabInstance: {fileID: 1470588844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1303287099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,8 +1252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeAnimation: {fileID: 1256408907}
-  Freddie: {fileID: 1813865881}
-  Squeak: {fileID: 1460771375}
+  Freddie: {fileID: 1813865873}
+  Squeak: {fileID: 1460771369}
 --- !u!4 &1376750137
 Transform:
   m_ObjectHideFlags: 0
@@ -1604,13 +1609,17 @@ PrefabInstance:
       propertyPath: roomType
       value: Bathroom
       objectReference: {fileID: 0}
+    - target: {fileID: 3043469786821739693, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+      propertyPath: closeCollider
+      value: 
+      objectReference: {fileID: 1536875347}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9816823
+      value: 4.101
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1656,6 +1665,11 @@ PrefabInstance:
 --- !u!4 &1473731542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+  m_PrefabInstance: {fileID: 1575355880}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1473731544 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5078684482761003514, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
   m_PrefabInstance: {fileID: 1575355880}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1508021185
@@ -1742,6 +1756,11 @@ Transform:
   m_Father: {fileID: 517080494}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1536875347 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5078684482761003514, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+  m_PrefabInstance: {fileID: 1897978139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1575355880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1758,13 +1777,17 @@ PrefabInstance:
       propertyPath: roomType
       value: Bathroom
       objectReference: {fileID: 0}
+    - target: {fileID: 3043469786821739693, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+      propertyPath: closeCollider
+      value: 
+      objectReference: {fileID: 1983293940}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2983176
+      value: -1.401
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2615,13 +2638,17 @@ PrefabInstance:
       propertyPath: roomType
       value: LivingRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 3043469786821739693, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+      propertyPath: closeCollider
+      value: 
+      objectReference: {fileID: 1287529219}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.341212
+      value: 4.238529
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2667,6 +2694,11 @@ PrefabInstance:
 --- !u!4 &1983293938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+  m_PrefabInstance: {fileID: 4647549577770233688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1983293940 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5078684482761003514, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
   m_PrefabInstance: {fileID: 4647549577770233688}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1984142721
@@ -3067,13 +3099,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoomTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 3043469786821739693, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
+      propertyPath: closeCollider
+      value: 
+      objectReference: {fileID: 1473731544}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.6583174
+      value: -1.5389999
       objectReference: {fileID: 0}
     - target: {fileID: 3826405379015168874, guid: bb0e4aa288c807a48aa7b999e53dd7f2, type: 3}
       propertyPath: m_LocalPosition.y

@@ -5,29 +5,36 @@ using UnityEngine;
 public class RoomTrigger : MonoBehaviour
 {
     [SerializeField] string roomType;
+    [SerializeField] Collider2D closeCollider;
 
     bool isRestarting;
-    int shouldCheck = 0;
+    bool shouldCheck;
 
     void Awake()
     {
         isRestarting = false;
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        shouldCheck++;
+        shouldCheck = false;
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
         HandleTrigger(collision);
-        shouldCheck--;
+    }
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.IsTouching(closeCollider))
+        {
+            shouldCheck = false;
+        }
+        else
+        {
+            shouldCheck = true;
+        }
     }
 
     void HandleTrigger(Collider2D collision)
     {
-        if (!isRestarting && shouldCheck % 2 == 0)
+        if (!isRestarting && shouldCheck)
         {
             PlayerLogic player = collision.gameObject.GetComponent<PlayerLogic>();
             if (player.GetRoom() != roomType)
