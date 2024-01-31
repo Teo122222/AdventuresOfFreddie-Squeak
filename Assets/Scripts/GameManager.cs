@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        isRestarting = true;
         StartCoroutine(PlayAnimationAndLoadLevel());
     }
 
