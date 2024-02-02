@@ -34,7 +34,7 @@ public class RoomTrigger : MonoBehaviour
 
     void HandleTrigger(Collider2D collision)
     {
-        if (!isRestarting && shouldCheck)
+        if (!isRestarting && shouldCheck && (collision.tag == "Freddie" || collision.tag == "Squeak"))
         {
             PlayerLogic player = collision.gameObject.GetComponent<PlayerLogic>();
             if (player.GetRoom() != roomType)

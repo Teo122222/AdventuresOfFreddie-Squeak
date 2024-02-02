@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Squeak
   - Freddie
+  - Resident
   layers:
   - Default
   - TransparentFX
