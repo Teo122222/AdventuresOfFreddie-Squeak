@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class SqueakLogic : PlayerLogic
 {
+    [SerializeField] GameObject border;
+
     bool onHole = false;
     GameObject otherHole;
     void OnHole(InputValue v)
@@ -19,6 +21,7 @@ public class SqueakLogic : PlayerLogic
                 FindAnyObjectByType<GameManager>().RestartLevel();
             }
             otherHole = gameObject;
+            border.SetActive(!border.activeInHierarchy);
         }
     }
     
