@@ -6,16 +6,23 @@ using UnityEngine.InputSystem;
 public class SqueakLogic : PlayerLogic
 {
     bool onHole = false;
-    Transform otherHole;
+    GameObject otherHole;
     void OnHole(InputValue v)
     {
         if (onHole)
         {
-            transform.position = otherHole.position;
+            transform.position = otherHole.transform.position;
+            string roomType = otherHole.GetComponent<HoleTrigger>().GetRoomType();
+            SetRoom(roomType);
+            if (GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == roomType)
+            {
+                FindAnyObjectByType<GameManager>().RestartLevel();
+            }
+            otherHole = gameObject;
         }
     }
     
-    public void SetHole(Transform other)
+    public void SetHole(GameObject other)
     {
         otherHole = other;
         onHole = true;

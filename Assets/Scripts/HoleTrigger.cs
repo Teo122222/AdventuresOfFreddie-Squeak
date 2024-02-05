@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class HoleTrigger : MonoBehaviour
 {
-    [SerializeField] Transform otherHole;
+    [SerializeField] GameObject otherHole;
+    [SerializeField] string roomType;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,5 +21,10 @@ public class HoleTrigger : MonoBehaviour
         {
             collision.GetComponent<SqueakLogic>().UnSetHole();
         }
+    }
+
+    public string GetRoomType()
+    {
+        return roomType;
     }
 }
