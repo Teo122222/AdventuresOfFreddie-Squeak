@@ -16,7 +16,7 @@ public class WaterTrigger : MonoBehaviour
         if (collision.tag == "Freddie")
         {
             resident.GetComponent<SpriteRenderer>().enabled = true;
-            resident.GetComponent<Rigidbody2D>().velocityX = -10;
+            resident.GetComponent<Rigidbody2D>().velocityX = -15;
             StartCoroutine(MoveResident(collision));
         }
     }

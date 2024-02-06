@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3fe20aa6bbbacd84692d6cf41e5c8a7d
+guid: edfdf74a2866f6643a8527c908dd74ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7635725031329512663
-    second: sky_layer 1_0
+      213: -2735726151310662801
+    second: border_bottom_layer 2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sky_layer 1_0
+      name: border_bottom_layer 2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2304
-        height: 1296
+        x: 107
+        y: 23
+        width: 2090
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dc34fec57b87f960800000000000000
-      internalID: 7635725031329512663
+      spriteID: f63a1645f8fb80ad0800000000000000
+      internalID: -2735726151310662801
       vertices: []
       indices: 
       edges: []
