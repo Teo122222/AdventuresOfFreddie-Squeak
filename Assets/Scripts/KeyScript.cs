@@ -8,18 +8,24 @@ public class KeyScript : MonoBehaviour
     [SerializeField] float keyDistance;
 
     GameObject target;
-    // Start is called before the first frame update
+    Vector3 actualPos;
     void Awake()
     {
         target = gameObject;
+        actualPos = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Vector2.Distance(transform.position, target.transform.position) > keyDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, keySpeed * Time.deltaTime);
+            actualPos = transform.position;
+        }
+        else
+        {
+            
+            transform.position = new Vector3(actualPos.x, actualPos.y + Mathf.Sin(Time.time*8) * 0.1f, actualPos.z);
         }
     }
 

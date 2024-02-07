@@ -3639,7 +3639,11 @@ PrefabInstance:
       objectReference: {fileID: 1460771369}
     - target: {fileID: -8067680814027634557, guid: cb7fc2f226b22ee47af8bd453d6d537c, type: 3}
       propertyPath: keySpeed
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8067680814027634557, guid: cb7fc2f226b22ee47af8bd453d6d537c, type: 3}
+      propertyPath: keyDistance
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5933099114449375491, guid: cb7fc2f226b22ee47af8bd453d6d537c, type: 3}
       propertyPath: m_Name
@@ -3651,7 +3655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8222856922476453603, guid: cb7fc2f226b22ee47af8bd453d6d537c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8222856922476453603, guid: cb7fc2f226b22ee47af8bd453d6d537c, type: 3}
       propertyPath: m_LocalPosition.y
