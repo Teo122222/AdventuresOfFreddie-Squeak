@@ -8,32 +8,27 @@ public class KeyScript : MonoBehaviour
     [SerializeField] float keyDistance;
 
     GameObject target;
-    Vector3 actualPos;
     void Awake()
     {
         target = gameObject;
-        actualPos = transform.position;
     }
 
     void Update()
     {
+        transform.position = new Vector3(transform.position.x, transform.position.y + Mathf.Sin(Time.time * 8) * 0.003f, transform.position.z);
         if (Vector2.Distance(transform.position, target.transform.position) > keyDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, keySpeed * Time.deltaTime);
-            actualPos = transform.position;
-        }
-        else
-        {
             
-            transform.position = new Vector3(actualPos.x, actualPos.y + Mathf.Sin(Time.time*8) * 0.1f, actualPos.z);
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Freddie" || collision.tag == "Squeak")
+        if (collision.tag == "Squeak")
         {
             target = collision.gameObject;
+            FindAnyObjectByType<GameManager>().SetHasKey(true);
         }
     }
 }

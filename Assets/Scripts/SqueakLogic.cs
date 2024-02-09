@@ -14,6 +14,10 @@ public class SqueakLogic : PlayerLogic
         if (onHole)
         {
             transform.position = otherHole.transform.position;
+            if (FindAnyObjectByType<GameManager>().GetHasKey())
+            {
+                FindAnyObjectByType<KeyScript>().gameObject.transform.position = transform.position;
+            }
             string roomType = otherHole.GetComponent<HoleTrigger>().GetRoomType();
             SetRoom(roomType);
             if (GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == roomType)

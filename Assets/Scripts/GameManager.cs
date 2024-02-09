@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     Collider2D freddieCollider;
     Collider2D squeakCollider;
     bool isRestarting = false;
+    bool hasKey = false;
     void Start()
     {
         freddieCollider = Freddie.GetComponent<Collider2D>();
@@ -40,5 +41,15 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     } 
+
+    public void SetHasKey(bool key)
+    {
+        hasKey = key;
+    }
+
+    public bool GetHasKey()
+    {
+        return hasKey;
+    }
 
 }
