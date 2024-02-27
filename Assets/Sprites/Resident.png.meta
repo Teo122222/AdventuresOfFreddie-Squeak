@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3fe20aa6bbbacd84692d6cf41e5c8a7d
+guid: ee3854f2b2ac6e144aee61b24f93e2ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7635725031329512663
-    second: sky_layer 1_0
+      213: 7915652849492401464
+    second: Resident_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -94,17 +94,41 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sky_layer 1_0
+      name: Resident_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2304
-        height: 1296
+        x: 95
+        y: 15
+        width: 322
+        height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dc34fec57b87f960800000000000000
-      internalID: 7635725031329512663
+      spriteID: 83d9d43e35c0add60800000000000000
+      internalID: 7915652849492401464
       vertices: []
       indices: 
       edges: []
@@ -129,7 +153,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sky_layer 1_0: 7635725031329512663
+      Resident_0: 7915652849492401464
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

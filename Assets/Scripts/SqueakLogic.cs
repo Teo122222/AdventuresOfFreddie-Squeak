@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class SqueakLogic : PlayerLogic
 {
@@ -26,6 +27,16 @@ public class SqueakLogic : PlayerLogic
             }
             otherHole = gameObject;
             border.SetActive(!border.activeInHierarchy);
+            Light2D light = GetComponentInChildren<Light2D>();
+            light.enabled = !light.enabled;
+            if (Random.Range(0, 100) == 1 && light.enabled)
+            {
+                light.color = Color.red;
+            }
+            else
+            {
+                light.color = Color.white;
+            }
         }
     }
     

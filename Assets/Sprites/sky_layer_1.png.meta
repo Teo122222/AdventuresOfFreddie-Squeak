@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: edfdf74a2866f6643a8527c908dd74ec
+guid: 12fd13346bdf95e4588c7cb899602a1e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2735726151310662801
-    second: border_bottom_layer 2_0
+      213: -7469288697591423709
+    second: sky_layer_1_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -94,17 +94,41 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: border_bottom_layer 2_0
+      name: sky_layer_1_0
       rect:
         serializedVersion: 2
-        x: 107
-        y: 23
-        width: 2090
-        height: 110
+        x: 0
+        y: 0
+        width: 2304
+        height: 1296
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f63a1645f8fb80ad0800000000000000
-      internalID: -2735726151310662801
+      spriteID: 32d1937e081c75890800000000000000
+      internalID: -7469288697591423709
       vertices: []
       indices: 
       edges: []
@@ -128,8 +152,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      border_bottom_layer 2_0: -2735726151310662801
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

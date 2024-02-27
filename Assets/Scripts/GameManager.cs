@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     Collider2D squeakCollider;
     bool isRestarting = false;
     bool hasKey = false;
+    bool isDoorOpened = false;
+
     void Start()
     {
         freddieCollider = Freddie.GetComponent<Collider2D>();
@@ -52,4 +54,13 @@ public class GameManager : MonoBehaviour
         return hasKey;
     }
 
+    public void OpenedDoor()
+    {
+        isDoorOpened = true; 
+    }
+
+    public bool isDoorOpen()
+    {
+        return isDoorOpened;
+    }
 }
