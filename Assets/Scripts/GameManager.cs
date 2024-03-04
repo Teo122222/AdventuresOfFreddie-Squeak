@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Animator fadeAnimation;
     [SerializeField] GameObject Freddie;
     [SerializeField] GameObject Squeak;
+    [SerializeField] Image keyUI;
+    [SerializeField] Sprite collectedKeyImage;
 
     Collider2D freddieCollider;
     Collider2D squeakCollider;
     bool isRestarting = false;
     bool hasKey = false;
     bool isDoorOpened = false;
+    bool hasFish = false;
+    bool hasCheese = false;
 
     void Start()
     {
@@ -54,13 +59,24 @@ public class GameManager : MonoBehaviour
         return hasKey;
     }
 
-    public void OpenedDoor()
+    public void OpenDoor()
     {
-        isDoorOpened = true; 
+        isDoorOpened = true;
+        keyUI.sprite = collectedKeyImage;
     }
 
     public bool isDoorOpen()
     {
         return isDoorOpened;
+    }
+
+    public void CollectCheese()
+    {
+        hasCheese = true;
+    }
+
+    public void CollectFish()
+    {
+        hasFish = true;
     }
 }

@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2069857105
-  m_SortingLayer: 3
+  m_SortingLayerID: 778277819
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -3651197323037948573, guid: f5bea052e50daa94eb757e88d31ff821, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherHole: {fileID: 0}
+  roomType: 
 --- !u!61 &5351300501721993959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,7 +138,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.46875, y: 0.53125}
+    oldSize: {x: 0.53571427, y: 0.60714287}
     newSize: {x: 0.3, y: 0.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

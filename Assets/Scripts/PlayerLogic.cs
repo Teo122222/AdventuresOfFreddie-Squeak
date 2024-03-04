@@ -19,7 +19,7 @@ public class PlayerLogic : MonoBehaviour
         else if (onDoor && manager.GetHasKey())
         {
             FindAnyObjectByType<KeyScript>().GetComponent<SpriteRenderer>().enabled = false;
-            manager.OpenedDoor();
+            manager.OpenDoor();
             // Set the UI as the key is open
             // Play door open sound effect
         }

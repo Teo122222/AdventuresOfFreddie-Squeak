@@ -6,10 +6,12 @@ using UnityEngine.InputSystem;
 public class Squeak : Movement
 {
     [SerializeField] float jumpVelocity;
+    [SerializeField] float coyoteTime;
     [SerializeField] float jumpBufferTime;
     [SerializeField] float jumpTime;
 
     EdgeCollider2D feetCollider;
+    float coyoteTimeCounter;
     float jumpBufferCounter;
     float jumpTimeCounter;
     bool isHolding;
@@ -22,6 +24,11 @@ public class Squeak : Movement
         }
         else if (!v.isPressed)
         {
+            if (coyoteTimeCounter > 0f)
+            {
+                playerRigidbody.velocityY *= 0.5f;
+                coyoteTimeCounter = 0;
+            }
             isHolding = false;
         }
     }
@@ -43,16 +50,21 @@ public class Squeak : Movement
     {
         if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
-            if (jumpBufferCounter > 0f)
-            {
-                playerRigidbody.velocityY = jumpVelocity;
-                jumpBufferCounter = 0f;
-                jumpTimeCounter = jumpTime;
-            }
+            coyoteTimeCounter = coyoteTime;
             if (isHolding) jumpBufferCounter = jumpBufferTime;
             
         }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
         jumpBufferCounter -= Time.deltaTime;
+        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
+        {
+            playerRigidbody.velocityY = jumpVelocity;
+            jumpBufferCounter = 0f;
+            jumpTimeCounter = jumpTime;
+        }
         if (jumpTimeCounter < 0)
         {
             playerRigidbody.velocityY *= 0.5f;
