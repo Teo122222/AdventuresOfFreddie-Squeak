@@ -1,19 +1,94 @@
 fileFormatVersion: 2
-guid: c857c09f3dfe8f6428f878132b599e27
+guid: dcd934da7a6582447aa7f0dc82693c79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5480395621343031608
-    second: cat_sprites_idle-sheet_0
+      213: -4969207563056476897
+    second: menu background_0
   - first:
-      213: 8591042201727480398
-    second: cat_sprites_idle-sheet_1
+      213: 8446020911567980265
+    second: menu background_1
   - first:
-      213: -161898816064955675
-    second: cat_sprites_idle-sheet_2
+      213: 9093484409166745110
+    second: menu background_2
   - first:
-      213: 8341715932790377514
-    second: cat_sprites_idle-sheet_3
+      213: 3111493864186676289
+    second: menu background_3
+  - first:
+      213: -2353002136951448544
+    second: menu background_4
+  - first:
+      213: -132053722008627904
+    second: menu background_5
+  - first:
+      213: 6841993393648230457
+    second: menu background_6
+  - first:
+      213: 8550209139862866884
+    second: menu background_7
+  - first:
+      213: 3068676849408614668
+    second: menu background_8
+  - first:
+      213: -6789049996892817935
+    second: menu background_9
+  - first:
+      213: -495846383600708565
+    second: menu background_10
+  - first:
+      213: 9017487283777096129
+    second: menu background_11
+  - first:
+      213: -6036650718398872501
+    second: menu background_12
+  - first:
+      213: 8318750882721501876
+    second: menu background_13
+  - first:
+      213: 2198103465574245756
+    second: menu background_14
+  - first:
+      213: -3164082213919371815
+    second: menu background_15
+  - first:
+      213: 2949110278663095295
+    second: menu background_16
+  - first:
+      213: -739287247296671999
+    second: menu background_17
+  - first:
+      213: 3767445848343388557
+    second: menu background_18
+  - first:
+      213: 5691571719662759316
+    second: menu background_19
+  - first:
+      213: 734596824890293421
+    second: menu background_20
+  - first:
+      213: -8842099692269305860
+    second: menu background_21
+  - first:
+      213: -9025622013032005195
+    second: menu background_22
+  - first:
+      213: 2583736641074293013
+    second: menu background_23
+  - first:
+      213: 3976188803191723492
+    second: menu background_24
+  - first:
+      213: -3745798712339094456
+    second: menu background_25
+  - first:
+      213: -2591726070614574236
+    second: menu background_26
+  - first:
+      213: -4326233231873609043
+    second: menu background_27
+  - first:
+      213: -5708170629874602049
+    second: menu background_28
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -60,7 +135,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,85 +182,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cat_sprites_idle-sheet_0
+      name: menu background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ce0e310839b1f3b0800000000000000
-      internalID: -5480395621343031608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_sprites_idle-sheet_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e423b5c7d53893770800000000000000
-      internalID: 8591042201727480398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_sprites_idle-sheet_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5ea54e272e1d0cdf0800000000000000
-      internalID: -161898816064955675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cat_sprites_idle-sheet_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2ccf2fc17ab3c370800000000000000
-      internalID: 8341715932790377514
+      spriteID: f0832e0a9758b6841a151056f738e5c2
+      internalID: 301720008
       vertices: []
       indices: 
       edges: []
@@ -193,7 +205,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1e797e833783bc24abc65b58473f6789
+    spriteID: 5eeab1161b91d764c8b870412ee3c7a3
     internalID: 0
     vertices: []
     indices: 
@@ -201,11 +213,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cat_sprites_idle-sheet_0: -5480395621343031608
-      cat_sprites_idle-sheet_1: 8591042201727480398
-      cat_sprites_idle-sheet_2: -161898816064955675
-      cat_sprites_idle-sheet_3: 8341715932790377514
-      cat_sprites_idle-sheet_4: 420952711
+      menu background_0: 301720008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 1696de3219c75bd4399c9a9a4883b6c9
+guid: 8d133f64142c13949b4720c710766bf1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6008981755541026586
-    second: flat_background_layer 1_0
+      213: -2675990960766656676
+    second: cat_sprites_idle_to_sideways_0
+  - first:
+      213: 8518537217092681678
+    second: cat_sprites_idle_to_sideways_1
+  - first:
+      213: 3583717148391603311
+    second: cat_sprites_idle_to_sideways_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -94,41 +100,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flat_background_layer 1_0
+      name: cat_sprites_idle_to_sideways_0
       rect:
         serializedVersion: 2
-        x: 95
-        y: 155
-        width: 2114
-        height: 1046
+        x: 0
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +118,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e88c272eeecb9ca0800000000000000
-      internalID: -6008981755541026586
+      spriteID: c5fd8513668fcdad0800000000000000
+      internalID: -2675990960766656676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_sprites_idle_to_sideways_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecff0ce377ce73670800000000000000
+      internalID: 8518537217092681678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat_sprites_idle_to_sideways_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c7b5552cbebb130800000000000000
+      internalID: 3583717148391603311
       vertices: []
       indices: 
       edges: []
@@ -145,7 +169,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9744e3aa0c4fc0f4bb8b0144523c36ee
     internalID: 0
     vertices: []
     indices: 
@@ -153,7 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      flat_background_layer 1_0: -6008981755541026586
+      cat_sprites_idle_to_sideways_0: -2675990960766656676
+      cat_sprites_idle_to_sideways_1: 8518537217092681678
+      cat_sprites_idle_to_sideways_2: 3583717148391603311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

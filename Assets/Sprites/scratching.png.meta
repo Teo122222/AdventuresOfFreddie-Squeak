@@ -1,37 +1,58 @@
 fileFormatVersion: 2
-guid: 362156d6847bc574aa271d5468d7560e
+guid: dcb9b7a63dcbed14093b5d0b7decd428
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6494202451418527922
-    second: freddie_walking_sheet_0
+      213: -2667548437346247214
+    second: scratching_0
   - first:
-      213: -7207334424315300339
-    second: freddie_walking_sheet_1
+      213: -5302902574769211268
+    second: scratching_1
   - first:
-      213: -4142013696485168553
-    second: freddie_walking_sheet_2
+      213: 250696969933223860
+    second: scratching_2
   - first:
-      213: -9011531661399129719
-    second: freddie_walking_sheet_3
+      213: -5734648254811269061
+    second: scratching_3
   - first:
-      213: 2224778407491851326
-    second: freddie_walking_sheet_4
+      213: 3400107592883896502
+    second: scratching_4
   - first:
-      213: -5966190012804026097
-    second: freddie_walking_sheet_5
+      213: 3607273509668826848
+    second: scratching_5
   - first:
-      213: 1536685694933603071
-    second: freddie_walking_sheet_6
+      213: 7969002292591587046
+    second: scratching_6
   - first:
-      213: 1615067219638307724
-    second: freddie_walking_sheet_7
+      213: 518776541034247659
+    second: scratching_7
   - first:
-      213: -5769286760788186033
-    second: freddie_walking_sheet_8
+      213: 7244706512189220009
+    second: scratching_8
   - first:
-      213: -5157986433201573620
-    second: freddie_walking_sheet_9
+      213: 6898169865778412425
+    second: scratching_9
+  - first:
+      213: 5464071822597587813
+    second: scratching_10
+  - first:
+      213: 954077253128236598
+    second: scratching_11
+  - first:
+      213: 226481891712135959
+    second: scratching_12
+  - first:
+      213: 1329496098020279343
+    second: scratching_13
+  - first:
+      213: -3264295901806464006
+    second: scratching_14
+  - first:
+      213: 5568970719125533247
+    second: scratching_15
+  - first:
+      213: 3116644104092049209
+    second: scratching_16
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -78,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,12 +146,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: freddie_walking_sheet_0
+      name: scratching_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
+        x: 58
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,19 +160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b8b548c8ba002a50800000000000000
-      internalID: 6494202451418527922
+      spriteID: 2dd14da54d6fafad0800000000000000
+      internalID: -2667548437346247214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_1
+      name: scratching_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
+        x: 218
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,19 +181,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d06fd35f6876afb90800000000000000
-      internalID: -7207334424315300339
+      spriteID: c787068443e4866b0800000000000000
+      internalID: -5302902574769211268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_2
+      name: scratching_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
+        x: 378
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,19 +202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75ae2360d7c9486c0800000000000000
-      internalID: -4142013696485168553
+      spriteID: 4b7f22fd097aa7300800000000000000
+      internalID: 250696969933223860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_3
+      name: scratching_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
+        x: 538
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,19 +223,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9818e18f2bb90f280800000000000000
-      internalID: -9011531661399129719
+      spriteID: b381924bbcf6a60b0800000000000000
+      internalID: -5734648254811269061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_4
+      name: scratching_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 128
+        x: 698
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,19 +244,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e34d28a9c2000ee10800000000000000
-      internalID: 2224778407491851326
+      spriteID: 6b004f757db9f2f20800000000000000
+      internalID: 3400107592883896502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_5
+      name: scratching_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 128
+        x: 858
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,19 +265,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0135582bc5d33da0800000000000000
-      internalID: -5966190012804026097
+      spriteID: 0eeac77152c9f0230800000000000000
+      internalID: 3607273509668826848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_6
+      name: scratching_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 128
+        x: 1018
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -265,19 +286,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff211f17f77635510800000000000000
-      internalID: 1536685694933603071
+      spriteID: 6eee1301d55979e60800000000000000
+      internalID: 7969002292591587046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_7
+      name: scratching_7
       rect:
         serializedVersion: 2
-        x: 896
-        y: 0
-        width: 128
+        x: 1178
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -286,19 +307,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8b4bea441fd96610800000000000000
-      internalID: 1615067219638307724
+      spriteID: be5f626f380133700800000000000000
+      internalID: 518776541034247659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: freddie_walking_sheet_8
+      name: scratching_8
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
+        x: 1338
+        y: 16
+        width: 64
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -307,29 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4c2bdf02406fefa0800000000000000
-      internalID: -5769286760788186033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: freddie_walking_sheet_9
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c017cbccaa62b68b0800000000000000
-      internalID: -5157986433201573620
+      spriteID: 9a46ff0503e5a8460800000000000000
+      internalID: 7244706512189220009
       vertices: []
       indices: 
       edges: []
@@ -337,7 +337,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: de02df35ceb19be4293cf3ed80fca7cf
+    spriteID: 562d8b270a6e50c4cbd097f71257388f
     internalID: 0
     vertices: []
     indices: 
@@ -345,16 +345,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      freddie_walking_sheet_0: 6494202451418527922
-      freddie_walking_sheet_1: -7207334424315300339
-      freddie_walking_sheet_2: -4142013696485168553
-      freddie_walking_sheet_3: -9011531661399129719
-      freddie_walking_sheet_4: 2224778407491851326
-      freddie_walking_sheet_5: -5966190012804026097
-      freddie_walking_sheet_6: 1536685694933603071
-      freddie_walking_sheet_7: 1615067219638307724
-      freddie_walking_sheet_8: -5769286760788186033
-      freddie_walking_sheet_9: -5157986433201573620
+      scratching_0: -2667548437346247214
+      scratching_1: -5302902574769211268
+      scratching_2: 250696969933223860
+      scratching_3: -5734648254811269061
+      scratching_4: 3400107592883896502
+      scratching_5: 3607273509668826848
+      scratching_6: 7969002292591587046
+      scratching_7: 518776541034247659
+      scratching_8: 7244706512189220009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

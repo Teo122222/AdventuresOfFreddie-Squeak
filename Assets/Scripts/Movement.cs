@@ -63,4 +63,9 @@ public class Movement : MonoBehaviour
         playerRigidbody.velocity = new Vector2(0f, 0f);
         playerAnimator.SetBool("isWalking", false);
     }
+
+    public void UnDie()
+    {
+        isAlive = true;
+    }
 }

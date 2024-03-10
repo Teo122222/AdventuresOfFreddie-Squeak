@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Squeak;
     [SerializeField] Image keyUI;
     [SerializeField] Sprite collectedKeyImage;
+    [SerializeField] GameObject pauseCanvas;
+    //[SerializeField] Canvas endCanvas;
 
     Collider2D freddieCollider;
     Collider2D squeakCollider;
@@ -47,7 +49,21 @@ public class GameManager : MonoBehaviour
         fadeAnimation.SetTrigger("StartTransistion");
         yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    } 
+    }
+
+    public void PauseGame()
+    {
+        Squeak.GetComponent<Movement>().Die();
+        Freddie.GetComponent<Movement>().Die();
+        pauseCanvas.SetActive(true); 
+    }
+
+    public void ResumeGame()
+    {
+        Squeak.GetComponent<Movement>().UnDie();
+        Freddie.GetComponent<Movement>().UnDie();
+        pauseCanvas.SetActive(false);
+    }
 
     public void SetHasKey(bool key)
     {

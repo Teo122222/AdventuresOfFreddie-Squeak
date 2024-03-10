@@ -15,19 +15,22 @@ public class FreddieMovement : Movement
     bool isHolding;
     void OnJump(InputValue v)
     {
-        if (v.isPressed)
+        if (isAlive)
         {
-            jumpBufferCounter = jumpBufferTime;
-            isHolding = true;
-        }
-        else if (!v.isPressed)
-        {
-            if (coyoteTimeCounter > 0f)
+            if (v.isPressed)
             {
-                playerRigidbody.velocityY *= 0.5f;
-                coyoteTimeCounter = 0;
+                jumpBufferCounter = jumpBufferTime;
+                isHolding = true;
             }
-            isHolding = false;
+            else if (!v.isPressed)
+            {
+                if (coyoteTimeCounter > 0f)
+                {
+                    playerRigidbody.velocityY *= 0.5f;
+                    coyoteTimeCounter = 0;
+                }
+                isHolding = false;
+            }
         }
     }
     void Start()
