@@ -12,7 +12,7 @@ public class SqueakLogic : PlayerLogic
     GameObject otherHole;
     void OnHole(InputValue v)
     {
-        if (onHole)
+        if (onHole && gameObject.GetComponent<Movement>().IsAlive())
         {
             transform.position = otherHole.transform.position;
             if (FindAnyObjectByType<GameManager>().GetHasKey())

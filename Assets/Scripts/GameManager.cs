@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] Image keyUI;
     [SerializeField] Sprite collectedKeyImage;
     [SerializeField] GameObject pauseCanvas;
+    [SerializeField] GameObject endCanvas;
+    [SerializeField] Animator endAnimation;
+    [SerializeField] float starTime;
     //[SerializeField] Canvas endCanvas;
 
     Collider2D freddieCollider;
@@ -39,23 +42,29 @@ public class GameManager : MonoBehaviour
     public void RestartLevel()
     {
         isRestarting = true;
-        StartCoroutine(PlayAnimationAndLoadLevel());
+        StartCoroutine(PlayAnimationAndLoadLevel(SceneManager.GetActiveScene().buildIndex));
     }
 
-    IEnumerator PlayAnimationAndLoadLevel()
+    IEnumerator PlayAnimationAndLoadLevel(int index)
     {
         Squeak.GetComponent<Movement>().Die();
         Freddie.GetComponent<Movement>().Die();
         fadeAnimation.SetTrigger("StartTransistion");
         yield return new WaitForSecondsRealtime(0.5f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(index);
+    }
+
+    public void BackToMainMenu()
+    {
+        isRestarting = true;
+        StartCoroutine(PlayAnimationAndLoadLevel(0));
     }
 
     public void PauseGame()
     {
         Squeak.GetComponent<Movement>().Die();
         Freddie.GetComponent<Movement>().Die();
-        pauseCanvas.SetActive(true); 
+        pauseCanvas.SetActive(true);
     }
 
     public void ResumeGame()
@@ -63,6 +72,25 @@ public class GameManager : MonoBehaviour
         Squeak.GetComponent<Movement>().UnDie();
         Freddie.GetComponent<Movement>().UnDie();
         pauseCanvas.SetActive(false);
+    }
+
+    public void EndGame()
+    {
+        Squeak.GetComponent<Movement>().Die();
+        Freddie.GetComponent<Movement>().Die();
+        endCanvas.SetActive(true);
+        float animationTime = 0.5f;
+        if (hasKey) animationTime += starTime;
+        if (hasCheese || hasFish) animationTime += starTime;
+        if (hasCheese && hasFish) animationTime += starTime;
+        StartCoroutine(PlayEndAnimation(animationTime));
+    }
+
+    IEnumerator PlayEndAnimation(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Debug.Log(time);
+        endAnimation.enabled = false;
     }
 
     public void SetHasKey(bool key)

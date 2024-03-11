@@ -9,19 +9,21 @@ public class PlayerLogic : MonoBehaviour
 
     void OnDoor()
     {
-        GameManager manager = FindAnyObjectByType<GameManager>();
-        if (onDoor && manager.isDoorOpen() && tag == "Freddie")
+        if (gameObject.GetComponent<Movement>().IsAlive())
         {
-            // Only Freddie has to go through the door.
-            gameObject.SetActive(false);
-            // Game over, display ending ui.
-        }
-        else if (onDoor && manager.GetHasKey())
-        {
-            FindAnyObjectByType<KeyScript>().GetComponent<SpriteRenderer>().enabled = false;
-            manager.OpenDoor();
-            // Set the UI as the key is open
-            // Play door open sound effect
+            GameManager manager = FindAnyObjectByType<GameManager>();
+            if (onDoor && manager.isDoorOpen() && tag == "Freddie")
+            {
+                gameObject.SetActive(false);
+                // Game over, display ending ui.
+                manager.EndGame();
+            }
+            else if (onDoor && manager.GetHasKey())
+            {
+                FindAnyObjectByType<KeyScript>().GetComponent<SpriteRenderer>().enabled = false;
+                manager.OpenDoor();
+                // Play door open sound effect
+            }
         }
     }
 

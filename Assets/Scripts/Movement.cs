@@ -68,4 +68,9 @@ public class Movement : MonoBehaviour
     {
         isAlive = true;
     }
+
+    public bool IsAlive()
+    {
+        return isAlive;
+    }
 }

@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: 542c5f3195263754db13ddff84dee8e8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3931401752563673373
+    second: winning menu background_0
+  - first:
+      213: -6407178705525561022
+    second: winning menu background_1
+  - first:
+      213: 7035382672310183408
+    second: winning menu background_2
+  - first:
+      213: 7174661145117608600
+    second: winning menu background_3
+  - first:
+      213: 67121646569919148
+    second: winning menu background_4
+  - first:
+      213: 5352357454708432929
+    second: winning menu background_5
+  - first:
+      213: -6980331275473427920
+    second: winning menu background_6
+  - first:
+      213: -6076300685607962406
+    second: winning menu background_7
+  - first:
+      213: 4845702107086968202
+    second: winning menu background_8
+  - first:
+      213: 7813655814775592255
+    second: winning menu background_9
+  - first:
+      213: 47433391185437043
+    second: winning menu background_10
+  - first:
+      213: 7284752207322517046
+    second: winning menu background_11
+  - first:
+      213: 2236200188007165601
+    second: winning menu background_12
+  - first:
+      213: -8673260523726300814
+    second: winning menu background_13
+  - first:
+      213: 8299823044300380787
+    second: winning menu background_14
+  - first:
+      213: 7772262636079399441
+    second: winning menu background_15
+  - first:
+      213: 8332108352562528017
+    second: winning menu background_16
+  - first:
+      213: 2399968494093935722
+    second: winning menu background_17
+  - first:
+      213: -7702434200125877755
+    second: winning menu background_18
+  - first:
+      213: -1348021694243025302
+    second: winning menu background_19
+  - first:
+      213: -5535726713455010268
+    second: winning menu background_20
+  - first:
+      213: -5121763757045634271
+    second: winning menu background_21
+  - first:
+      213: 6892315928583849136
+    second: winning menu background_22
+  - first:
+      213: -729333702323948593
+    second: winning menu background_23
+  - first:
+      213: 8223328812207304732
+    second: winning menu background_24
+  - first:
+      213: 1687134136765568509
+    second: winning menu background_25
+  - first:
+      213: -4071505159040170686
+    second: winning menu background_26
+  - first:
+      213: -6110281846040171561
+    second: winning menu background_27
+  - first:
+      213: 5165161754810576510
+    second: winning menu background_28
+  - first:
+      213: -918249699865859564
+    second: winning menu background_29
+  - first:
+      213: -3027290891649982270
+    second: winning menu background_30
+  - first:
+      213: -8110643823491648414
+    second: winning menu background_31
+  - first:
+      213: 1704363853893507002
+    second: winning menu background_32
+  - first:
+      213: 4143305174810519192
+    second: winning menu background_33
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: winning menu background_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543373c9786fc9348badf3c3b45ab738
+      internalID: 340209333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winning menu background_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b31726b09f6464ab4fc560d40a9955
+      internalID: 369631991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7fcc14e6b91e5014393365005e4197ba
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      winning menu background_0: 340209333
+      winning menu background_1: 369631991
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

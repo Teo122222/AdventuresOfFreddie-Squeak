@@ -8,12 +8,15 @@ public class FreddieLogic : PlayerLogic
     [SerializeField] Transform spawnPoint;
     void OnScratch()
     {
-        GameObject newScratch = Instantiate(scratch, spawnPoint.position, transform.rotation);
-        newScratch.transform.localScale = transform.localScale;
-        if (newScratch.transform.position.x < -10.8 || newScratch.transform.position.x > 10.8)
+        if (gameObject.GetComponent<Movement>().IsAlive())
         {
-            Destroy(newScratch);
+            GameObject newScratch = Instantiate(scratch, spawnPoint.position, transform.rotation);
+            newScratch.transform.localScale = transform.localScale;
+            if (newScratch.transform.position.x < -10.8 || newScratch.transform.position.x > 10.8)
+            {
+                Destroy(newScratch);
+            }
+            else Destroy(newScratch, 0.75f);
         }
-        else Destroy(newScratch, 0.75f);
     }
 }
