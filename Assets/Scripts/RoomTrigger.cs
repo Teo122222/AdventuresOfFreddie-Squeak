@@ -25,6 +25,7 @@ public class RoomTrigger : MonoBehaviour
         if (collision.IsTouching(closeCollider))
         {
             shouldCheck = false;
+
         }
         else
         {
