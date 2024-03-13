@@ -12,6 +12,11 @@ public class HoleTrigger : MonoBehaviour
         if (collision.tag == "Squeak")
         {
             collision.GetComponent<SqueakLogic>().SetHole(otherHole);
+            if (GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == otherHole.GetComponent<HoleTrigger>().GetRoomType())
+            {
+                GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().ShowExclamation();
+                collision.GetComponent<PlayerLogic>().ShowExclamation();
+            }
         }
     }
 
@@ -20,6 +25,8 @@ public class HoleTrigger : MonoBehaviour
         if (collision.tag == "Squeak")
         {
             collision.GetComponent<SqueakLogic>().UnSetHole();
+            GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().HideExclamation();
+            collision.GetComponent<PlayerLogic>().HideExclamation();
         }
     }
 

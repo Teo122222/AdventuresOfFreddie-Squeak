@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerLogic : MonoBehaviour
 {
     [SerializeField] string room;
+    [SerializeField] GameObject exclamation;
     bool onDoor = false;
 
     void OnDoor()
@@ -27,14 +28,14 @@ public class PlayerLogic : MonoBehaviour
         }
     }
 
-    void Start()
+    public void ShowExclamation()
     {
-        
+        exclamation.SetActive(true);
     }
 
-    void Update()
+    public void HideExclamation()
     {
-        
+        exclamation.SetActive(false);
     }
 
     public void SetRoom(string newRoom)

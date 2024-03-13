@@ -23,6 +23,8 @@ public class SqueakLogic : PlayerLogic
             SetRoom(roomType);
             if (GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == roomType)
             {
+                GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().ShowExclamation();
+                GetComponent<PlayerLogic>().ShowExclamation();
                 FindAnyObjectByType<GameManager>().RestartLevel();
             }
             otherHole = gameObject;

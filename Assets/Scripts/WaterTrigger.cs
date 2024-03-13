@@ -11,13 +11,30 @@ public class WaterTrigger : MonoBehaviour
         resident = GameObject.FindWithTag("Resident");
         residentCollider = resident.GetComponent<Collider2D>();
     }
-    void OnTriggerEnter2D(Collider2D collision)
+
+    void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Freddie")
         {
-            resident.GetComponent<SpriteRenderer>().enabled = true;
-            resident.GetComponent<Rigidbody2D>().velocityX = -15;
-            StartCoroutine(MoveResident(collision));
+            collision.GetComponent<PlayerLogic>().HideExclamation();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if (collision.tag == "Freddie")
+        {
+            if (GetComponent<EdgeCollider2D>().IsTouching(collision))
+            {
+                resident.GetComponent<SpriteRenderer>().enabled = true;
+                resident.GetComponent<Rigidbody2D>().velocityX = -15;
+                StartCoroutine(MoveResident(collision));
+            }
+            else
+            {
+                collision.GetComponent<PlayerLogic>().ShowExclamation();
+            }
         }
     }
 
