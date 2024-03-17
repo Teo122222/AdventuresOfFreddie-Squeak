@@ -59,6 +59,7 @@ public class Squeak : Movement
         }
         else
         {
+            playerAnimator.SetBool("isWalking", true);
             coyoteTimeCounter -= Time.deltaTime;
         }
         jumpBufferCounter -= Time.deltaTime;

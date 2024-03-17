@@ -20,6 +20,14 @@ public class WaterTrigger : MonoBehaviour
         }
     }
 
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Freddie")
+        {
+            collision.GetComponent<PlayerLogic>().ShowExclamation();
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         
@@ -30,10 +38,6 @@ public class WaterTrigger : MonoBehaviour
                 resident.GetComponent<SpriteRenderer>().enabled = true;
                 resident.GetComponent<Rigidbody2D>().velocityX = -15;
                 StartCoroutine(MoveResident(collision));
-            }
-            else
-            {
-                collision.GetComponent<PlayerLogic>().ShowExclamation();
             }
         }
     }

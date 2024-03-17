@@ -52,16 +52,18 @@ public class FreddieMovement : Movement
         if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             coyoteTimeCounter = coyoteTime;
-
+            playerAnimator.SetBool("isJumping", false);
             if (isHolding) jumpBufferCounter = jumpBufferTime;
         }
         else
         {
+            playerAnimator.SetBool("isJumping", true);
             coyoteTimeCounter -= Time.deltaTime;
         }
         jumpBufferCounter -= Time.deltaTime;
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
         {
+            
             playerRigidbody.velocityY = jumpVelocity;
             jumpBufferCounter = 0f;
         }
