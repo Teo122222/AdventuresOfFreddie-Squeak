@@ -5,13 +5,23 @@ using UnityEngine;
 public class BackpackTrigger : MonoBehaviour
 {
     [SerializeField] GameObject fish;
-
+    [SerializeField] GameObject sparkle;
+    [SerializeField] Sprite brokenBag;
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Scratch") 
         {
-            fish.SetActive(true);
-            Destroy(gameObject);
+            StartCoroutine(BreakObject());
         }
+    }
+
+    IEnumerator BreakObject()
+    {
+        yield return new WaitForSecondsRealtime(0.75f);
+        fish.SetActive(true);
+        sparkle.SetActive(false);
+        GetComponent<SpriteRenderer>().sprite = brokenBag;
+        GetComponent<BoxCollider2D>().enabled = false;
+        this.enabled = false;
     }
 }

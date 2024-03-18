@@ -9,6 +9,8 @@ public class FreddieMovement : Movement
     [SerializeField] float coyoteTime;
     [SerializeField] float jumpBufferTime;
 
+    GameObject currentOneWayPlatform;
+    BoxCollider2D playerCollider;
     EdgeCollider2D feetCollider;
     float coyoteTimeCounter;
     float jumpBufferCounter;
@@ -30,12 +32,38 @@ public class FreddieMovement : Movement
                     coyoteTimeCounter = 0;
                 }
                 isHolding = false;
+                playerAnimator.SetBool("isLanding", true);
             }
         }
     }
+
+    void OnDrop(InputValue v)
+    {
+        if (isAlive)
+        { 
+            if (currentOneWayPlatform != null)
+            {
+                StartCoroutine(DisableCollider());
+            }
+        } 
+    }
+
+    //https://www.youtube.com/watch?v=7rCUt6mqqE8
+    IEnumerator DisableCollider()
+    {
+        BoxCollider2D platformCollider = currentOneWayPlatform.GetComponent<BoxCollider2D>();
+        Physics2D.IgnoreCollision(playerCollider, platformCollider);
+        Physics2D.IgnoreCollision(feetCollider, platformCollider);
+        yield return new WaitForSeconds(0.7f);
+        Physics2D.IgnoreCollision(playerCollider, platformCollider, false);
+        Physics2D.IgnoreCollision(feetCollider, platformCollider, false);
+        
+    }
+
     void Start()
     {
         feetCollider = GetComponent<EdgeCollider2D>();
+        playerCollider = GetComponent<BoxCollider2D>();
     }
 
     override protected void Update()
@@ -49,6 +77,10 @@ public class FreddieMovement : Movement
 
     void FreddieJump()
     {
+        if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Landing")) && playerAnimator.GetBool("isJumping"))
+        {
+            playerAnimator.SetBool("isLanding", true);
+        }
         if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             coyoteTimeCounter = coyoteTime;
@@ -63,9 +95,26 @@ public class FreddieMovement : Movement
         jumpBufferCounter -= Time.deltaTime;
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
         {
-            
+            playerAnimator.SetBool("isLanding", false);
             playerRigidbody.velocityY = jumpVelocity;
             jumpBufferCounter = 0f;
         }
     }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "OneWayPlatform")
+        {
+            currentOneWayPlatform = collision.gameObject;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "OneWayPlatform")
+        {
+            currentOneWayPlatform = null;
+        }
+    }
+
 }
