@@ -23,6 +23,7 @@ public class PlayerLogic : MonoBehaviour
             {
                 FindAnyObjectByType<KeyScript>().GetComponent<SpriteRenderer>().enabled = false;
                 manager.OpenDoor();
+                GetComponent<Movement>().HideUpControls();
                 // Play door open sound effect
             }
         }

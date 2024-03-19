@@ -13,12 +13,8 @@ public class TeddyTrigger : MonoBehaviour
         {
             StartCoroutine(BreakObject());
         }
-        if (collision.tag == "Freddie" && !showed)
-        {
-            collision.gameObject.GetComponent<FreddieMovement>().ShowScratchControls();
-        }
+        
     }
-
     IEnumerator BreakObject()
     {
         yield return new WaitForSecondsRealtime(0.75f);
@@ -26,5 +22,26 @@ public class TeddyTrigger : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = brokenTeddy;
         GetComponent<BoxCollider2D>().enabled = false;
         this.enabled = false;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Freddie" && !showed)
+        {
+            collision.gameObject.GetComponent<FreddieLogic>().ShowScratchControls();
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Freddie")
+        {
+            collision.gameObject.GetComponent<FreddieLogic>().HideScratchControls();
+        }
+    }
+
+    public void SetShowed(bool isShowed)
+    {
+        showed = isShowed;
     }
 }

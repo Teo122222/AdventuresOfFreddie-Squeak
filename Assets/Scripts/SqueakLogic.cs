@@ -20,6 +20,8 @@ public class SqueakLogic : PlayerLogic
                 FindAnyObjectByType<KeyScript>().gameObject.transform.position = transform.position;
             }
             string roomType = otherHole.GetComponent<HoleTrigger>().GetRoomType();
+            GetComponent<Movement>().HideUpControls();
+            FindAnyObjectByType<HoleTrigger>().SetShowed(true);
             SetRoom(roomType);
             if (GameObject.FindWithTag("Freddie").GetComponent<PlayerLogic>().GetRoom() == roomType)
             {

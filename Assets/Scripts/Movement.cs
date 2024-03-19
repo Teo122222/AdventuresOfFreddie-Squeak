@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     [SerializeField] protected float moveSpeed;
-    [SerializeField] GameObject movingButtons;
+    [SerializeField] protected GameObject movingButtons;
     [SerializeField] protected GameObject upButtons;
 
     protected bool isAlive = true;
@@ -87,5 +87,10 @@ public class Movement : MonoBehaviour
     public void ShowUpControls()
     {
         upButtons.SetActive(true);
+    }
+
+    public void HideUpControls()
+    {
+        upButtons.SetActive(false);
     }
 }

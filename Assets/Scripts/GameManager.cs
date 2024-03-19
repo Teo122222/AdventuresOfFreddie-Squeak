@@ -89,7 +89,6 @@ public class GameManager : MonoBehaviour
     IEnumerator PlayEndAnimation(float time)
     {
         yield return new WaitForSeconds(time);
-        Debug.Log(time);
         endAnimation.enabled = false;
     }
 

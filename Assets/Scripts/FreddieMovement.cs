@@ -74,6 +74,16 @@ public class FreddieMovement : Movement
         if (isAlive)
         {
             FreddieJump();
+            if (playerRigidbody.velocityX < 0)
+            {
+                movingButtons.transform.localScale = new Vector2(-1f, 1f);
+                upButtons.transform.localScale = new Vector2(-1f, 1f);
+            }
+            else
+            {
+                movingButtons.transform.localScale = new Vector2(1f, 1f);
+                upButtons.transform.localScale = new Vector2(1f, 1f);
+            }
         }
     }
 
@@ -124,10 +134,4 @@ public class FreddieMovement : Movement
     {
         return hasJumped;
     }
-
-    public void ShowScratchControls()
-    {
-
-    }
-
 }
