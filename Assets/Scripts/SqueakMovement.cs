@@ -79,4 +79,5 @@ public class Squeak : Movement
             jumpTimeCounter -= Time.deltaTime;
         }
     }
+
 }

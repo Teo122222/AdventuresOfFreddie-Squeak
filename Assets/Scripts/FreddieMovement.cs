@@ -15,12 +15,14 @@ public class FreddieMovement : Movement
     float coyoteTimeCounter;
     float jumpBufferCounter;
     bool isHolding;
+    bool hasJumped = false;
     void OnJump(InputValue v)
     {
         if (isAlive)
         {
             if (v.isPressed)
             {
+                upButtons.SetActive(false);
                 jumpBufferCounter = jumpBufferTime;
                 isHolding = true;
             }
@@ -77,7 +79,7 @@ public class FreddieMovement : Movement
 
     void FreddieJump()
     {
-        if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Landing")) && playerAnimator.GetBool("isJumping"))
+        if ((feetCollider.IsTouchingLayers(LayerMask.GetMask("Landing")) && playerAnimator.GetBool("isJumping")) || playerRigidbody.velocityY < 0)
         {
             playerAnimator.SetBool("isLanding", true);
         }
@@ -98,6 +100,7 @@ public class FreddieMovement : Movement
             playerAnimator.SetBool("isLanding", false);
             playerRigidbody.velocityY = jumpVelocity;
             jumpBufferCounter = 0f;
+            hasJumped = true;
         }
     }
 
@@ -115,6 +118,16 @@ public class FreddieMovement : Movement
         {
             currentOneWayPlatform = null;
         }
+    }
+
+    public bool HasJumped()
+    {
+        return hasJumped;
+    }
+
+    public void ShowScratchControls()
+    {
+
     }
 
 }

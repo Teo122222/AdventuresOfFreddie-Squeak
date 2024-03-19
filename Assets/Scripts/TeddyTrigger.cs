@@ -6,11 +6,16 @@ public class TeddyTrigger : MonoBehaviour
 {
     [SerializeField] Sprite brokenTeddy;
     [SerializeField] GameObject sparkle;
+    bool showed = false;
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Scratch")
         {
             StartCoroutine(BreakObject());
+        }
+        if (collision.tag == "Freddie" && !showed)
+        {
+            collision.gameObject.GetComponent<FreddieMovement>().ShowScratchControls();
         }
     }
 

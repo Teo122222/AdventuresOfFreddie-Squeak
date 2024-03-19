@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     [SerializeField] protected float moveSpeed;
+    [SerializeField] GameObject movingButtons;
+    [SerializeField] protected GameObject upButtons;
 
     protected bool isAlive = true;
     float moveDirection;
@@ -35,12 +37,15 @@ public class Movement : MonoBehaviour
     {
         if (Mathf.Abs(playerRigidbody.velocityX) >= moveSpeed) 
         { 
-            playerRigidbody.velocityX = moveSpeed * moveDirection; 
+            playerRigidbody.velocityX = moveSpeed * moveDirection;
+            movingButtons.SetActive(false);
         }
         else 
         { 
             playerRigidbody.velocityX = playerRigidbody.velocityX*Mathf.Abs(moveDirection) + moveSpeed/20*moveDirection;
+            
         }
+
         playerAnimator.SetBool("isWalking", true);
     }
 
@@ -72,5 +77,15 @@ public class Movement : MonoBehaviour
     public bool IsAlive()
     {
         return isAlive;
+    }
+
+    public void ShowMovingControls()
+    {
+        movingButtons.SetActive(true);
+    }
+
+    public void ShowUpControls()
+    {
+        upButtons.SetActive(true);
     }
 }
