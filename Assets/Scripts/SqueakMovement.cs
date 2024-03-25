@@ -76,7 +76,7 @@ public class Squeak : Movement
         jumpBufferCounter -= Time.deltaTime;
         if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
-            if (Mathf.Abs(playerRigidbody.velocityY) <= 0.01)
+            if (playerRigidbody.velocityY <= 1)
                 FindAnyObjectByType<MusicManager>().PlaySoundClip(jumpSound, transform, 0.6f);
             playerRigidbody.velocityY = jumpVelocity;
             jumpBufferCounter = 0f;
