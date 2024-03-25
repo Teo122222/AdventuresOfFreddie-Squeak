@@ -8,10 +8,10 @@ public class FreddieMovement : Movement
     [SerializeField] float jumpVelocity;
     [SerializeField] float coyoteTime;
     [SerializeField] float jumpBufferTime;
+    [SerializeField] AudioClip jumpSound;
 
     GameObject currentOneWayPlatform;
     BoxCollider2D playerCollider;
-    EdgeCollider2D feetCollider;
     float coyoteTimeCounter;
     float jumpBufferCounter;
     bool isHolding;
@@ -64,7 +64,6 @@ public class FreddieMovement : Movement
 
     void Start()
     {
-        feetCollider = GetComponent<EdgeCollider2D>();
         playerCollider = GetComponent<BoxCollider2D>();
     }
 
@@ -79,7 +78,7 @@ public class FreddieMovement : Movement
                 movingButtons.transform.localScale = new Vector2(-1f, 1f);
                 upButtons.transform.localScale = new Vector2(-1f, 1f);
             }
-            else
+            else if (playerRigidbody.velocityX > 0)
             {
                 movingButtons.transform.localScale = new Vector2(1f, 1f);
                 upButtons.transform.localScale = new Vector2(1f, 1f);
@@ -108,6 +107,8 @@ public class FreddieMovement : Movement
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f)
         {
             playerAnimator.SetBool("isLanding", false);
+            if (Mathf.Abs(playerRigidbody.velocityY) <= 0.01 || playerAnimator.GetBool("isJumping"))
+                FindAnyObjectByType<MusicManager>().PlaySoundClip(jumpSound, transform, 0.6f);
             playerRigidbody.velocityY = jumpVelocity;
             jumpBufferCounter = 0f;
             hasJumped = true;

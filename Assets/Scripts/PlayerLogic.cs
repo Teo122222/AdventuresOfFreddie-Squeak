@@ -6,6 +6,7 @@ public class PlayerLogic : MonoBehaviour
 {
     [SerializeField] string room;
     [SerializeField] GameObject exclamation;
+    [SerializeField] AudioClip alertSound;
     bool onDoor = false;
 
     void OnDoor()
@@ -31,7 +32,11 @@ public class PlayerLogic : MonoBehaviour
 
     public void ShowExclamation()
     {
-        exclamation.SetActive(true);
+        if (!exclamation.activeSelf)
+        {
+            exclamation.SetActive(true);
+            FindAnyObjectByType<MusicManager>().PlaySoundClip(alertSound, transform, 1f);
+        }
     }
 
     public void HideExclamation()

@@ -9,8 +9,8 @@ public class Squeak : Movement
     [SerializeField] float coyoteTime;
     [SerializeField] float jumpBufferTime;
     [SerializeField] float jumpTime;
+    [SerializeField] AudioClip jumpSound;
 
-    EdgeCollider2D feetCollider;
     float coyoteTimeCounter;
     float jumpBufferCounter;
     float jumpTimeCounter;
@@ -37,7 +37,6 @@ public class Squeak : Movement
     }
     void Start()
     {
-        feetCollider = GetComponent<EdgeCollider2D>();
     }
 
     override protected void Update()
@@ -46,6 +45,18 @@ public class Squeak : Movement
         if (isAlive)
         {
             SqueakJump();
+            /*if (playerRigidbody.velocityX < 0)
+            {
+                Debug.Log("Left");
+                movingButtons.transform.localScale = new Vector2(1f, 1f);
+                upButtons.transform.localScale = new Vector2(1f, 1f);
+            }
+            else if (playerRigidbody.velocityX > 0)
+            {
+                Debug.Log("Right");
+                movingButtons.transform.localScale = new Vector2(-1f, 1f);
+                upButtons.transform.localScale = new Vector2(-1f, 1f);
+            }*/
         }
     }
 
@@ -65,6 +76,8 @@ public class Squeak : Movement
         jumpBufferCounter -= Time.deltaTime;
         if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
         {
+            if (Mathf.Abs(playerRigidbody.velocityY) <= 0.01)
+                FindAnyObjectByType<MusicManager>().PlaySoundClip(jumpSound, transform, 0.6f);
             playerRigidbody.velocityY = jumpVelocity;
             jumpBufferCounter = 0f;
             jumpTimeCounter = jumpTime;

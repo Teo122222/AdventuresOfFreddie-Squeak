@@ -587,27 +587,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Title screen UI Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 189
-        width: 501
-        height: 262
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad4a66fd80cbecf10800000000000000
-      internalID: 2291976006671967450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Title screen UI Sheet_22
       rect:
         serializedVersion: 2
@@ -629,76 +608,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Title screen UI Sheet_26
-      rect:
-        serializedVersion: 2
-        x: 3139
-        y: 169
-        width: 381
-        height: 282
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cbc54f9ee1ad96a60800000000000000
-      internalID: 7667899666883959996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Title screen UI Sheet_28
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 69
-        width: 72
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cbc2380ccfda09a0800000000000000
-      internalID: -6265949864128754752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Title screen UI Sheet_29
-      rect:
-        serializedVersion: 2
-        x: 179
-        y: 29
-        width: 282
-        height: 72
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1db41d5af38f744f0800000000000000
-      internalID: -844433452860093487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Title screen UI Sheet_30
       rect:
         serializedVersion: 2
-        x: 3239
-        y: 39
-        width: 262
-        height: 72
+        x: 3010
+        y: 0
+        width: 510
+        height: 563
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -721,7 +637,7 @@ TextureImporter:
         width: 840
         height: 269
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -729,6 +645,27 @@ TextureImporter:
       bones: []
       spriteID: be0f5064030d1d340a12daa3d1ceafc9
       internalID: 1729921738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Title screen UI Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 510
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5f364800cb746408c97dd7ac959d77
+      internalID: -1891698997
       vertices: []
       indices: 
       edges: []
@@ -768,6 +705,7 @@ TextureImporter:
       Title screen UI Sheet_4: -2674450496826156293
       Title screen UI Sheet_5: -5127735461477286790
       Title screen UI Sheet_6: 1729921738
+      Title screen UI Sheet_7: 1660483708
       Title screen UI Sheet_8: 4412675628075119898
       Title screen UI Sheet_9: -4688526645823117252
   mipmapLimitGroupName: 

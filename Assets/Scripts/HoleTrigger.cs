@@ -7,6 +7,11 @@ public class HoleTrigger : MonoBehaviour
     [SerializeField] GameObject otherHole;
     [SerializeField] string roomType;
     static bool showed = false;
+
+    void Start()
+    {
+        showed = false;
+    }
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Squeak")

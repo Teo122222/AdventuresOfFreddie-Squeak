@@ -29,7 +29,6 @@ public class FreddieLogic : PlayerLogic
         if (transform.localScale.x == -1)
         {
             scratchButton.transform.localScale = new Vector2(-1f, 1f);
-            Debug.Log("sss");
         }
         else
         {

@@ -11,16 +11,21 @@ public class Movement : MonoBehaviour
 
     protected bool isAlive = true;
     float moveDirection;
+    AudioSource footsteps;
     protected Rigidbody2D playerRigidbody;
+    protected EdgeCollider2D feetCollider;
     protected Animator playerAnimator;
     void OnMove(InputValue direction)
     {
         moveDirection = direction.Get<Vector2>().x;
+        
     }
     void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
+        feetCollider = GetComponent<EdgeCollider2D>();
+        footsteps = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -45,8 +50,17 @@ public class Movement : MonoBehaviour
             playerRigidbody.velocityX = playerRigidbody.velocityX*Mathf.Abs(moveDirection) + moveSpeed/20*moveDirection;
             
         }
-
         playerAnimator.SetBool("isWalking", true);
+
+        if (playerRigidbody.velocityX != 0 && feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            if (!footsteps.isPlaying)
+                footsteps.Play();
+        }
+        else
+        {
+            footsteps.Stop();
+        }
     }
 
     void PlayerFlip()

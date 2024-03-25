@@ -6,8 +6,9 @@ public class KeyScript : MonoBehaviour
 {
     [SerializeField] float keySpeed;
     [SerializeField] float keyDistance;
+    [SerializeField] AudioClip collectSound;
 
-    GameObject target;
+    GameObject target = null;
     void Awake()
     {
         target = gameObject;
@@ -25,10 +26,11 @@ public class KeyScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Squeak")
+        if (collision.tag == "Squeak" && target == gameObject)
         {
             target = collision.gameObject;
             FindAnyObjectByType<GameManager>().SetHasKey(true);
+            FindAnyObjectByType<MusicManager>().PlaySoundClip(collectSound, transform, 1f);
         }
     }
 }

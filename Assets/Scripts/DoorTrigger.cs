@@ -13,7 +13,6 @@ public class DoorTrigger : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Movement>().ShowUpControls();
             }
-            Debug.Log("in");
         }
     }
 
@@ -23,7 +22,6 @@ public class DoorTrigger : MonoBehaviour
         {
             collision.GetComponent<PlayerLogic>().SetDoor(false);
             collision.gameObject.GetComponent<Movement>().HideUpControls();
-            Debug.Log("out");
         }
     }
 }

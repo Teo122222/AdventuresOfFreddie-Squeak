@@ -124,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keySpeed: 4.2
   keyDistance: 0.8
+  collectSound: {fileID: 8300000, guid: 4b02c62f8c14bf04e8f6967e3068b6c2, type: 3}
 --- !u!50 &8434952439195109103
 Rigidbody2D:
   serializedVersion: 4
