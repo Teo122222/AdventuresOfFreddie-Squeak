@@ -2585,7 +2585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611100399}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.55, y: -1.49, z: 0}
+  m_LocalPosition: {x: 8.55, y: -1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4779,8 +4779,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0017000139, y: -0.13609579, z: 0}
-    m_Extent: {x: 0.56729996, y: 0.81132627, z: 0}
+    m_Center: {x: -0.0013173223, y: -0.13486105, z: 0}
+    m_Extent: {x: 0.56288266, y: 0.81256104, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6537,6 +6537,7 @@ MonoBehaviour:
   Squeak: {fileID: 1460771369}
   keyUI: {fileID: 1498641062}
   collectedKeyImage: {fileID: -1459656002161226760, guid: ed1f9a8bcdf08744787d8ec915c7b93f, type: 3}
+  openDoorImage: {fileID: 120478847276542798, guid: 49ac7a857f6efda4b80ef2ddc95e2d0e, type: 3}
   pauseCanvas: {fileID: 383651770}
   endCanvas: {fileID: 215313570}
   endAnimation: {fileID: 2143054290}
@@ -10053,8 +10054,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.1033437, y: 0.19385862, z: 0}
-    m_Extent: {x: 7.896656, y: 5.6293416, z: 0}
+    m_Center: {x: 3.1033437, y: 0.18826747, z: 0}
+    m_Extent: {x: 7.896656, y: 5.6325674, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

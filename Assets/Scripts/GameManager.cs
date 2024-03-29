@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Squeak;
     [SerializeField] Image keyUI;
     [SerializeField] Sprite collectedKeyImage;
+    [SerializeField] Sprite openDoorImage;
     [SerializeField] GameObject pauseCanvas;
     [SerializeField] GameObject endCanvas;
     [SerializeField] Animator endAnimation;
@@ -106,6 +107,7 @@ public class GameManager : MonoBehaviour
     {
         isDoorOpened = true;
         keyUI.sprite = collectedKeyImage;
+        FindAnyObjectByType<DoorTrigger>().gameObject.GetComponent<SpriteRenderer>().sprite = openDoorImage;
     }
 
     public bool isDoorOpen()
