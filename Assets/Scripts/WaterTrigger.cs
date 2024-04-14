@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WaterTrigger : MonoBehaviour
 {
+    [SerializeField] AudioClip splashSound;
     GameObject resident;
     Collider2D residentCollider;
     void Start()
@@ -35,6 +36,7 @@ public class WaterTrigger : MonoBehaviour
         {
             if (GetComponent<EdgeCollider2D>().IsTouching(collision))
             {
+                FindAnyObjectByType<MusicManager>().PlaySoundClip(splashSound, transform, 0.8f);
                 resident.GetComponent<SpriteRenderer>().enabled = true;
                 resident.GetComponent<Rigidbody2D>().velocityX = -15;
                 StartCoroutine(MoveResident(collision));

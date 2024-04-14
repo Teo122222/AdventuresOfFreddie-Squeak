@@ -7,10 +7,12 @@ public class BackpackTrigger : MonoBehaviour
     [SerializeField] GameObject fish;
     [SerializeField] GameObject sparkle;
     [SerializeField] Sprite brokenBag;
+    [SerializeField] AudioClip tearSound;
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Scratch") 
         {
+            FindAnyObjectByType<MusicManager>().PlaySoundClip(tearSound, transform, 1f);
             StartCoroutine(BreakObject());
         }
     }

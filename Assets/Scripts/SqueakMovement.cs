@@ -10,11 +10,13 @@ public class Squeak : Movement
     [SerializeField] float jumpBufferTime;
     [SerializeField] float jumpTime;
     [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip fallingSound;
 
     float coyoteTimeCounter;
     float jumpBufferCounter;
     float jumpTimeCounter;
     bool isHolding;
+    bool falling = false;
     void OnJump(InputValue v)
     {
         if (isAlive)
@@ -62,6 +64,11 @@ public class Squeak : Movement
 
     void SqueakJump()
     {
+        if (playerRigidbody.velocityY < -5 && !falling)
+        {
+            FindAnyObjectByType<MusicManager>().PlaySoundClip(fallingSound, transform, 1f);
+            falling = true;
+        }
         if (feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             coyoteTimeCounter = coyoteTime;

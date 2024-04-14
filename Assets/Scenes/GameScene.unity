@@ -677,8 +677,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 7.765955, y: 0.04503441, z: 0}
-    m_Extent: {x: 3.9357967, y: 5.4549656, z: 0}
+    m_Center: {x: 7.7672997, y: 0.044450045, z: 0}
+    m_Extent: {x: 3.9383, y: 5.45555, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2506,6 +2506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brokenTeddy: {fileID: 8173769107573159802, guid: ed1f9a8bcdf08744787d8ec915c7b93f, type: 3}
   sparkle: {fileID: 1971700716}
+  tearSound: {fileID: 8300000, guid: b34c96a0cb3e87345ab9832b01668d2a, type: 3}
 --- !u!1 &611100399
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,6 +4507,7 @@ MonoBehaviour:
   fish: {fileID: 860330902}
   sparkle: {fileID: 535331266}
   brokenBag: {fileID: 422330473134589042, guid: ed1f9a8bcdf08744787d8ec915c7b93f, type: 3}
+  tearSound: {fileID: 8300000, guid: b34c96a0cb3e87345ab9832b01668d2a, type: 3}
 --- !u!1 &931251579
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,8 +4781,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0013173223, y: -0.13486105, z: 0}
-    m_Extent: {x: 0.56288266, y: 0.81256104, z: 0}
+    m_Center: {x: -0.00040000677, y: -0.13898474, z: 0}
+    m_Extent: {x: 0.5682, y: 0.81421524, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -6258,6 +6260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850fa1178df038d4fa33e05797dc9a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splashSound: {fileID: 8300000, guid: 46ebf8d6d65139c489c74313f33324ad, type: 3}
 --- !u!68 &1303287105
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -6532,7 +6535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd67d67609e2d0a4a81f906301c26461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeAnimation: {fileID: 0}
+  fadeAnimation: {fileID: 1729063559}
   Freddie: {fileID: 1813865873}
   Squeak: {fileID: 1460771369}
   keyUI: {fileID: 1498641062}
@@ -6542,6 +6545,7 @@ MonoBehaviour:
   endCanvas: {fileID: 215313570}
   endAnimation: {fileID: 2143054290}
   starTime: 0.5
+  startSound: {fileID: 8300000, guid: b54e2d3a89dbb2d4a98ea29a163f2268, type: 3}
 --- !u!4 &1376750137
 Transform:
   m_ObjectHideFlags: 0
@@ -6962,6 +6966,7 @@ MonoBehaviour:
   jumpBufferTime: 0.1
   jumpTime: 0.1
   jumpSound: {fileID: 8300000, guid: 94412a2f4bc856c48a57f513d06c5dc5, type: 3}
+  fallingSound: {fileID: 8300000, guid: 91407701695cb054a9c16fd0fa943f84, type: 3}
 --- !u!114 &1460771376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8481,6 +8486,11 @@ Transform:
   m_Father: {fileID: 517080494}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1729063559 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6220135437614437377, guid: cf52620966dc5d447a003de62f8dcb62, type: 3}
+  m_PrefabInstance: {fileID: 880397498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732578385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4392010792234764787, guid: 445b3a185d99d3b41b6fa5b7de8affbb, type: 3}
@@ -9026,6 +9036,7 @@ MonoBehaviour:
   scratch: {fileID: 3745205568965175104, guid: 06d21edfddd28a248b631030bf5ac766, type: 3}
   spawnPoint: {fileID: 2048984990}
   scratchButton: {fileID: 947013307}
+  scratchSound: {fileID: 8300000, guid: feb6ac53611050e4c969dd8c349f7665, type: 3}
 --- !u!82 &1813865884
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10054,8 +10065,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.1033437, y: 0.18826747, z: 0}
-    m_Extent: {x: 7.896656, y: 5.6325674, z: 0}
+    m_Center: {x: 3.10445, y: 0.19405842, z: 0}
+    m_Extent: {x: 7.9025497, y: 5.6295414, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

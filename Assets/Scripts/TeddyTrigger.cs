@@ -6,11 +6,13 @@ public class TeddyTrigger : MonoBehaviour
 {
     [SerializeField] Sprite brokenTeddy;
     [SerializeField] GameObject sparkle;
+    [SerializeField] AudioClip tearSound;
     bool showed = false;
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Scratch")
         {
+            FindAnyObjectByType<MusicManager>().PlaySoundClip(tearSound, transform, 1f);
             StartCoroutine(BreakObject());
         }
         

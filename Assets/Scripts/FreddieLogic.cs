@@ -7,6 +7,7 @@ public class FreddieLogic : PlayerLogic
     [SerializeField] GameObject scratch;
     [SerializeField] Transform spawnPoint;
     [SerializeField] GameObject scratchButton;
+    [SerializeField] AudioClip scratchSound;
     void OnScratch()
     {
         if (gameObject.GetComponent<Movement>().IsAlive())
@@ -15,6 +16,7 @@ public class FreddieLogic : PlayerLogic
                 FindAnyObjectByType<TeddyTrigger>().SetShowed(true);
             scratchButton.SetActive(false);
             GameObject newScratch = Instantiate(scratch, spawnPoint.position, transform.rotation);
+            FindAnyObjectByType<MusicManager>().PlaySoundClip(scratchSound, newScratch.transform, 0.9f);
             newScratch.transform.localScale = transform.localScale;
             if (newScratch.transform.position.x < -10.8 || newScratch.transform.position.x > 10.8)
             {

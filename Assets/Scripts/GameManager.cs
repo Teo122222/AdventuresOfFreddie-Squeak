@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject endCanvas;
     [SerializeField] Animator endAnimation;
     [SerializeField] float starTime;
+    [SerializeField] AudioClip startSound;
     //[SerializeField] Canvas endCanvas;
 
     Collider2D freddieCollider;
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         freddieCollider = Freddie.GetComponent<Collider2D>();
         squeakCollider = Squeak.GetComponent<Collider2D>();
+        FindAnyObjectByType<MusicManager>().PlaySoundClip(startSound, transform, 0.8f);
     }
 
     void Update()
