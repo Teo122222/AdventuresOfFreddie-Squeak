@@ -64,7 +64,7 @@ public class Squeak : Movement
 
     void SqueakJump()
     {
-        if (playerRigidbody.velocityY < -5 && !falling)
+        if (playerRigidbody.velocityY < -7 && !falling)
         {
             FindAnyObjectByType<MusicManager>().PlaySoundClip(fallingSound, transform, 1f);
             falling = true;
