@@ -8,7 +8,6 @@ public class Movement : MonoBehaviour
     [SerializeField] protected float moveSpeed;
     [SerializeField] protected GameObject movingButtons;
     [SerializeField] protected GameObject upButtons;
-
     protected bool isAlive = true;
     float moveDirection;
     AudioSource footsteps;
@@ -56,6 +55,7 @@ public class Movement : MonoBehaviour
         {
             if (!footsteps.isPlaying)
                 footsteps.Play();
+                Debug.Log("moving");
         }
         else
         {

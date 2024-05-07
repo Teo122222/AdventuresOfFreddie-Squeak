@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Animator fadeAnimation;
-    [SerializeField] GameObject Freddie;
-    [SerializeField] GameObject Squeak;
+    public GameObject Freddie;
+    public GameObject Squeak;
     [SerializeField] Image keyUI;
     [SerializeField] Sprite collectedKeyImage;
     [SerializeField] Sprite openDoorImage;
@@ -19,23 +20,40 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip startSound;
     //[SerializeField] Canvas endCanvas;
 
-    Collider2D freddieCollider;
-    Collider2D squeakCollider;
+    public Collider2D freddieCollider = null;
+    public Collider2D squeakCollider = null;
     bool isRestarting = false;
     bool hasKey = false;
     bool isDoorOpened = false;
     bool hasFish = false;
     bool hasCheese = false;
 
+    bool squeakSet = false;
+
+    void Awake()
+    {
+        var p1 = PlayerInput.Instantiate(Freddie, controlScheme: "Keyboard&Mouse", pairWithDevice: Keyboard.current);
+        //var p2 = PlayerInput.Instantiate(Squeak, controlScheme: "Keyboard&Mouse", pairWithDevice: Keyboard.current);
+    }
+
     void Start()
     {
+        Freddie = GameObject.Find("Freddie(Clone)");
         freddieCollider = Freddie.GetComponent<Collider2D>();
         squeakCollider = Squeak.GetComponent<Collider2D>();
+        
         FindAnyObjectByType<MusicManager>().PlaySoundClip(startSound, transform, 0.8f);
     }
 
     void Update()
     {
+        if(!squeakSet&&GameObject.Find("Squeak(Clone)"))
+        {
+            Squeak = GameObject.Find("Squeak(Clone)");
+            squeakCollider = Squeak.GetComponent<Collider2D>();
+            squeakSet = true;
+        }
+        
         if (freddieCollider.IsTouching(squeakCollider) && !isRestarting)
         {
             RestartLevel();

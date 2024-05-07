@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 
 public class SqueakLogic : PlayerLogic
 {
-    [SerializeField] GameObject border;
+    public GameObject border;
 
     bool onHole = false;
     GameObject otherHole;
@@ -30,6 +30,7 @@ public class SqueakLogic : PlayerLogic
                 FindAnyObjectByType<GameManager>().RestartLevel();
             }
             otherHole = gameObject;
+            border = GameObject.Find("Border");
             border.SetActive(!border.activeInHierarchy);
             Light2D light = GetComponentInChildren<Light2D>();
             light.enabled = !light.enabled;
