@@ -15,6 +15,7 @@ public class SqueakLogic : PlayerLogic
         if (onHole && gameObject.GetComponent<Movement>().IsAlive())
         {
             transform.position = otherHole.transform.position;
+            otherHole.GetComponent<HoleTrigger>().UseHole();
             if (FindAnyObjectByType<GameManager>().GetHasKey())
             {
                 FindAnyObjectByType<KeyScript>().gameObject.transform.position = transform.position;
@@ -30,7 +31,6 @@ public class SqueakLogic : PlayerLogic
                 FindAnyObjectByType<GameManager>().RestartLevel();
             }
             otherHole = gameObject;
-            border.SetActive(!border.activeInHierarchy);
             Light2D light = GetComponentInChildren<Light2D>();
             light.enabled = !light.enabled;
             if (Random.Range(0, 100) == 1 && light.enabled)

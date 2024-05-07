@@ -6,6 +6,7 @@ public class HoleTrigger : MonoBehaviour
 {
     [SerializeField] GameObject otherHole;
     [SerializeField] string roomType;
+    [SerializeField] GameObject border = null;
 
     static bool showed = false;
 
@@ -49,5 +50,13 @@ public class HoleTrigger : MonoBehaviour
     public string GetRoomType()
     {
         return roomType;
+    }
+
+    public void UseHole()
+    {
+        if (border != null)
+        {
+            border.SetActive(!border.activeInHierarchy);
+        }
     }
 }

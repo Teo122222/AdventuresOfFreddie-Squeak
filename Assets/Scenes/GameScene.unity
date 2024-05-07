@@ -677,8 +677,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 7.7674003, y: 0.045484304, z: 0}
-    m_Extent: {x: 3.9413, y: 5.4554157, z: 0}
+    m_Center: {x: 7.765955, y: 0.04503441, z: 0}
+    m_Extent: {x: 3.9357967, y: 5.4549656, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1876,6 +1876,10 @@ PrefabInstance:
       propertyPath: closeCollider
       value: 
       objectReference: {fileID: 334590481}
+    - target: {fileID: 8624712959607270610, guid: 445b3a185d99d3b41b6fa5b7de8affbb, type: 3}
+      propertyPath: border
+      value: 
+      objectReference: {fileID: 405375592}
     - target: {fileID: 8624712959607270610, guid: 445b3a185d99d3b41b6fa5b7de8affbb, type: 3}
       propertyPath: roomType
       value: LivingRoom
@@ -4428,8 +4432,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00095000863, y: -0.13888475, z: 0}
-    m_Extent: {x: 0.56904995, y: 0.8141153, z: 0}
+    m_Center: {x: 0, y: -0.13609579, z: 0}
+    m_Extent: {x: 0.5639, y: 0.81132627, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8304,8 +8308,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.104544, y: 0.1959498, z: 0}
-    m_Extent: {x: 7.8978567, y: 5.63325, z: 0}
+    m_Center: {x: 3.1050436, y: 0.1895001, z: 0}
+    m_Extent: {x: 7.8983564, y: 5.6322002, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9129,6 +9133,10 @@ PrefabInstance:
       propertyPath: closeCollider
       value: 
       objectReference: {fileID: 246998494}
+    - target: {fileID: 8624712959607270610, guid: 445b3a185d99d3b41b6fa5b7de8affbb, type: 3}
+      propertyPath: border
+      value: 
+      objectReference: {fileID: 405375592}
     - target: {fileID: 8624712959607270610, guid: 445b3a185d99d3b41b6fa5b7de8affbb, type: 3}
       propertyPath: roomType
       value: Underground
