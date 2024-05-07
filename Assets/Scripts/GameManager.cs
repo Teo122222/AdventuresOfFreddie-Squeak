@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] Animator fadeAnimation;
-    [SerializeField] GameObject Freddie;
-    [SerializeField] GameObject Squeak;
+    [SerializeField] GameObject FreddiePrefab;
+    [SerializeField] GameObject SqueakPrefab;
+    [SerializeField] Transform a;
     [SerializeField] Image keyUI;
     [SerializeField] Sprite collectedKeyImage;
     [SerializeField] Sprite openDoorImage;
@@ -19,6 +21,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip startSound;
     //[SerializeField] Canvas endCanvas;
 
+    GameObject Freddie;
+    GameObject Squeak;
+
     Collider2D freddieCollider;
     Collider2D squeakCollider;
     bool isRestarting = false;
@@ -27,8 +32,11 @@ public class GameManager : MonoBehaviour
     bool hasFish = false;
     bool hasCheese = false;
 
+
     void Start()
     {
+        Freddie = PlayerInput.Instantiate(FreddiePrefab, controlScheme: "LeftKeyboard", pairWithDevice: Keyboard.current).gameObject;
+        Squeak = PlayerInput.Instantiate(SqueakPrefab, controlScheme: "RightKeyboard", pairWithDevice: Keyboard.current).gameObject;
         freddieCollider = Freddie.GetComponent<Collider2D>();
         squeakCollider = Squeak.GetComponent<Collider2D>();
         FindAnyObjectByType<MusicManager>().PlaySoundClip(startSound, transform, 0.8f);
