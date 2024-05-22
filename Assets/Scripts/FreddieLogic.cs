@@ -16,7 +16,7 @@ public class FreddieLogic : PlayerLogic
                 FindAnyObjectByType<TeddyTrigger>().SetShowed(true);
             scratchButton.SetActive(false);
             GameObject newScratch = Instantiate(scratch, spawnPoint.position, transform.rotation);
-            FindAnyObjectByType<MusicManager>().PlaySoundClip(scratchSound, newScratch.transform, 0.9f);
+            MusicManager.Instance.PlaySoundClip(scratchSound, newScratch.transform, 0.9f);
             newScratch.transform.localScale = transform.localScale;
             if (newScratch.transform.position.x < -10.8 || newScratch.transform.position.x > 10.8)
             {

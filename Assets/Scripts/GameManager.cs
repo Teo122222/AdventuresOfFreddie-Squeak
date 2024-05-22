@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         Squeak = PlayerInput.Instantiate(SqueakPrefab, controlScheme: "RightKeyboard", pairWithDevice: Keyboard.current).gameObject;
         freddieCollider = Freddie.GetComponent<Collider2D>();
         squeakCollider = Squeak.GetComponent<Collider2D>();
-        FindAnyObjectByType<MusicManager>().PlaySoundClip(startSound, transform, 0.8f);
+        MusicManager.Instance.PlaySoundClip(startSound, transform, 0.8f);
     }
 
     void Update()

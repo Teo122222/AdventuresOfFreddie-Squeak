@@ -12,7 +12,7 @@ public class BackpackTrigger : MonoBehaviour
     {
         if (collision.tag == "Scratch") 
         {
-            FindAnyObjectByType<MusicManager>().PlaySoundClip(tearSound, transform, 1f);
+            MusicManager.Instance.PlaySoundClip(tearSound, transform, 1f);
             StartCoroutine(BreakObject());
         }
     }
