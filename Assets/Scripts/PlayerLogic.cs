@@ -35,7 +35,7 @@ public class PlayerLogic : MonoBehaviour
         if (!exclamation.activeSelf)
         {
             exclamation.SetActive(true);
-            FindAnyObjectByType<MusicManager>().PlaySoundClip(alertSound, transform, 1f);
+            MusicManager.Instance.PlaySoundClip(alertSound, transform, 1f);
         }
     }
 
