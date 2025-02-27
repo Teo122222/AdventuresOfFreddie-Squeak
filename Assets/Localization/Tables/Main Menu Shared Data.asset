@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: volume_key
     m_Metadata:
       m_Items: []
+  - m_Id: 5842590212096
+    m_Key: credits_key
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

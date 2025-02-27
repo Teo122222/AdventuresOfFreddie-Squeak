@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 111645312}
   - component: {fileID: 111645314}
   - component: {fileID: 111645313}
+  - component: {fileID: 111645315}
   m_Layer: 5
   m_Name: CreditsText
   m_TagString: Untagged
@@ -381,8 +382,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Credits
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
-  m_sharedMaterial: {fileID: -4372455803355668011, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
+  m_sharedMaterial: {fileID: -3910234698600016382, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -456,6 +457,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111645311}
   m_CullTransparentMesh: 1
+--- !u!114 &111645315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111645311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:16b3cf5b82caa5e47bece3a3d8b1fde7
+    m_TableEntryReference:
+      m_KeyId: 5842590212096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 111645313}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &204608082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,8 +1712,8 @@ MonoBehaviour:
     on \"Pixabay\"\r\n\"Retro Falling Down SFX\" by \"Pixabay\" on \"Pixabay\"\r\nFONT\r\n\"Minecraftia\"
     by \"Andrew Tyler\" on \"Dafont\"\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
-  m_sharedMaterial: {fileID: -4372455803355668011, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
+  m_sharedMaterial: {fileID: -3910234698600016382, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1710,7 +1751,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 10
+  m_paragraphSpacing: 50
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
@@ -2338,8 +2379,8 @@ MonoBehaviour:
   m_text: "Programming:\r\n\tMatteo Marelli\r\n\rArt:\r\n\tAndrea Lupori\r\n\rDocumentation:\r\n\tAngel
     Relox\r\n\rAudio:\r\n\tMVRC\t\t\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
-  m_sharedMaterial: {fileID: -4372455803355668011, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
+  m_sharedMaterial: {fileID: -3910234698600016382, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2377,7 +2418,7 @@ MonoBehaviour:
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 40
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
@@ -2778,8 +2819,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Volume
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
-  m_sharedMaterial: {fileID: -4372455803355668011, guid: 21b1732f92cf00c41837dc13a72d65f6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
+  m_sharedMaterial: {fileID: -3910234698600016382, guid: 13ccf88d3df725044add4d1f6d693e12, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

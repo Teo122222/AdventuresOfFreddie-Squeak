@@ -22,6 +22,10 @@ MonoBehaviour:
     m_Localized: Volum
     m_Metadata:
       m_Items: []
+  - m_Id: 5842590212096
+    m_Localized: "Studiepoeng\r"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
