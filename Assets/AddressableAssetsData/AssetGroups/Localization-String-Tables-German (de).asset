@@ -1,31 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-String-Tables-German (de)
-  m_EditorClassIdentifier: 
-  m_GroupName: Localization-String-Tables-German (de)
-  m_Data:
-    m_SerializedData: []
-  m_GUID: fe785399b8397534fb153229c88796b9
-  m_SerializeEntries:
-  - m_GUID: 5282c620e65b1d74fb817020a00156af
-    m_Address: Main Menu_de
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-de
-    FlaggedDuringContentUpdateRestriction: 0
-  m_ReadOnly: 1
-  m_Settings: {fileID: 11400000, guid: 0bf09d8d47d2503449c7dd323dbe48e4, type: 2}
-  m_SchemaSet:
-    m_Schemas:
-    - {fileID: 11400000, guid: 0542589104551c048aa49bc265d70960, type: 2}
-    - {fileID: 11400000, guid: edb097eeec38cd545b9b9d63b8067f33, type: 2}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5cba5012c483e1a3c327b4a2653438df543bb4849bd57e7dbcc1c4a08cf071e2
+size 1033

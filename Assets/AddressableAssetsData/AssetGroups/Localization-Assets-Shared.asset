@@ -1,30 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Localization-Assets-Shared
-  m_EditorClassIdentifier: 
-  m_GroupName: Localization-Assets-Shared
-  m_Data:
-    m_SerializedData: []
-  m_GUID: 8df721099d5349f43b210117fa3e0944
-  m_SerializeEntries:
-  - m_GUID: 16b3cf5b82caa5e47bece3a3d8b1fde7
-    m_Address: Assets/Localization/Tables/Main Menu Shared Data.asset
-    m_ReadOnly: 1
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  m_ReadOnly: 1
-  m_Settings: {fileID: 11400000, guid: 0bf09d8d47d2503449c7dd323dbe48e4, type: 2}
-  m_SchemaSet:
-    m_Schemas:
-    - {fileID: 11400000, guid: ccbbf20b6605e0e4abbc399a532bf63e, type: 2}
-    - {fileID: 11400000, guid: 5f84082ef3ea49a449a5d4489f170014, type: 2}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f04fc249e9fa9bddddf4aa445327cb6d49212c909d046a4692cbd83315df8c15
+size 1038
