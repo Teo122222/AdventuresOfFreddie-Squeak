@@ -58,8 +58,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator PlayAnimationAndLoadLevel(int index)
     {
-        Squeak.GetComponent<Movement>().Die();
-        Freddie.GetComponent<Movement>().Die();
+        if(Squeak != null) Squeak.GetComponent<Movement>().Die();
+        if(Freddie != null) Freddie.GetComponent<Movement>().Die();
         fadeAnimation.SetTrigger("StartTransistion");
         yield return new WaitForSecondsRealtime(0.5f);
         SceneManager.LoadScene(index);
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     public void BackToMainMenu()
     {
         isRestarting = true;
-        StartCoroutine(PlayAnimationAndLoadLevel(0));
+        StartCoroutine(PlayAnimationAndLoadLevel(1));
     }
 
     public void PauseGame()

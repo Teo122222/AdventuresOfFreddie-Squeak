@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class ButtonSound : MonoBehaviour
 {
-    [SerializeField] AudioClip sound;
+    [SerializeField] AudioClip buttonHoverSound;
+    [SerializeField] AudioClip buttonClickSound;
+
     [SerializeField] float volume = 1f;
 
     public void PlayButtonSound()
     {
-        FindAnyObjectByType<MusicManager>().PlaySoundClip(sound, transform, volume);
+        FindAnyObjectByType<MusicManager>().PlaySoundClip(buttonClickSound, transform, volume);
     }
+
+    public void OnPointerEnter( ) {
+	    FindAnyObjectByType<MusicManager>().PlaySoundClip(buttonHoverSound,transform, volume);
+	}
 }
