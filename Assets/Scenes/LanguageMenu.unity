@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1029518119}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &315108231
@@ -627,6 +627,9 @@ MonoBehaviour:
   fadeAnimation: {fileID: 982572677}
   homeMenu: {fileID: 204608082}
   settings: {fileID: 0}
+  firstLanguageSelectedButton: {fileID: 1029518119}
+  firstPlaySelectedButton: {fileID: 0}
+  firstSettingsSelectedButton: {fileID: 0}
 --- !u!4 &566877053
 Transform:
   m_ObjectHideFlags: 0
@@ -1947,6 +1950,11 @@ RectTransform:
 Animator:
   m_CorrespondingSourceObject: {fileID: 6220135437614437377, guid: cf52620966dc5d447a003de62f8dcb62, type: 3}
   m_PrefabInstance: {fileID: 4294494838275339294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1029518119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6459872800694178324, guid: 89605ce0a0ed58542bbbe83cb0c15585, type: 3}
+  m_PrefabInstance: {fileID: 793322282}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1196620261
 PrefabInstance:
