@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 3438010259254211340}
   - component: {fileID: 6854606657929863110}
   - component: {fileID: 9055730414373762161}
+  - component: {fileID: 59846929082346448}
   m_Layer: 0
   m_Name: Squeak
   m_TagString: Squeak
@@ -573,7 +574,7 @@ Transform:
   - {fileID: 1445493221134969180}
   - {fileID: 1245431770376230531}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &200101373759080522
 SpriteRenderer:
@@ -741,8 +742,8 @@ MonoBehaviour:
   coyoteTime: 0.05
   jumpBufferTime: 0.1
   jumpTime: 0.1
-  jumpSound: {fileID: 8300000, guid: 94412a2f4bc856c48a57f513d06c5dc5, type: 3}
-  fallingSound: {fileID: 8300000, guid: 91407701695cb054a9c16fd0fa943f84, type: 3}
+  jumpSound: {fileID: 8300000, guid: b8b75cb3ae9d4654b92680a921ca3729, type: 3}
+  fallingSound: {fileID: 8300000, guid: be1e86d074080264f816b7f589f36125, type: 3}
 --- !u!114 &924710338090680940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -810,7 +811,7 @@ MonoBehaviour:
     m_ActionName: 'Player1/Door[/Keyboard/upArrow]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: RightKeyboard
-  m_DefaultActionMap: Player1
+  m_DefaultActionMap: SqueakKeyboard
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!68 &3438010259254211340
@@ -870,7 +871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: LivingRoom
   exclamation: {fileID: 789987436686042644}
-  alertSound: {fileID: 8300000, guid: c44e1bbf657b23a418c7b657393c3018, type: 3}
+  alertSound: {fileID: 8300000, guid: 59974ef7e146233489bbadd611d5fcf7, type: 3}
   border: {fileID: 0}
 --- !u!82 &9055730414373762161
 AudioSource:
@@ -882,11 +883,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 673420539179ec444b5d12ed6caf5131, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 067a06aa45cb9954b9d8e573f99df3fd, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -968,3 +969,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &59846929082346448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8520983475927593247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e396787efd2cf754587f7e66de2ed549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSounds:
+  - {fileID: 8300000, guid: 76553839a8f09464695b0ece1a4ae3ce, type: 3}
+  - {fileID: 8300000, guid: ee4be911816ceff4f835fc4085f01f8c, type: 3}
+  - {fileID: 8300000, guid: 6addd87f8b81f934da97956c03aa19a6, type: 3}
+  - {fileID: 8300000, guid: 4982c0a854351e5439d861e2823e5ab5, type: 3}

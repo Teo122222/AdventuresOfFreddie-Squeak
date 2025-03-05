@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 7311691720672369639}
   - component: {fileID: 6658630593155945900}
   - component: {fileID: 2201758098522996493}
+  - component: {fileID: 4194148149132158034}
   - component: {fileID: 3219395184435852809}
   m_Layer: 0
   m_Name: Freddie
@@ -316,7 +317,7 @@ Transform:
   - {fileID: 7691213677583627537}
   - {fileID: 7935315441910909766}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6951396661332207849
 SpriteRenderer:
@@ -483,7 +484,7 @@ MonoBehaviour:
   jumpVelocity: 9
   coyoteTime: 0.2
   jumpBufferTime: 0.15
-  jumpSound: {fileID: 8300000, guid: dc9f5afffd01f094c8f1c2cdbfa82b63, type: 3}
+  jumpSound: {fileID: 8300000, guid: 4559d2f6a0688f041aa2fc9782299073, type: 3}
 --- !u!114 &7311691720672369639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,7 +540,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Drop[/Keyboard/s]'
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: LeftKeyboard
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: FreddieKeyboard
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!68 &6658630593155945900
@@ -599,11 +600,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: Bedroom
   exclamation: {fileID: 6509331810988549673}
-  alertSound: {fileID: 8300000, guid: c44e1bbf657b23a418c7b657393c3018, type: 3}
+  alertSound: {fileID: 8300000, guid: 59974ef7e146233489bbadd611d5fcf7, type: 3}
   scratch: {fileID: 3745205568965175104, guid: 06d21edfddd28a248b631030bf5ac766, type: 3}
   spawnPoint: {fileID: 7766004585911104635}
   scratchButton: {fileID: 4651507780521761780}
-  scratchSound: {fileID: 8300000, guid: feb6ac53611050e4c969dd8c349f7665, type: 3}
+  scratchSound: {fileID: 8300000, guid: ba57beb3eb955804ea0e419634518596, type: 3}
+--- !u!114 &4194148149132158034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4320575959474677617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e396787efd2cf754587f7e66de2ed549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSounds:
+  - {fileID: 8300000, guid: 5211ac479736f38469ba96fc2384e9b3, type: 3}
+  - {fileID: 8300000, guid: d080272e5070685488b6e1e90da52ca2, type: 3}
+  - {fileID: 8300000, guid: b1525c9dc9d32544c8952758bdf786e3, type: 3}
+  - {fileID: 8300000, guid: dd52bc120b11dcd4ab8b282309084112, type: 3}
 --- !u!82 &3219395184435852809
 AudioSource:
   m_ObjectHideFlags: 0
@@ -614,11 +632,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 673420539179ec444b5d12ed6caf5131, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 058a0426a2b5c9d46b1727cabd00bd38, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

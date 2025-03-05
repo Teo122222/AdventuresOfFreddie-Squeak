@@ -677,8 +677,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 7.765955, y: 0.047334433, z: 0}
-    m_Extent: {x: 3.9357967, y: 5.457266, z: 0}
+    m_Center: {x: 7.764276, y: 0.048434496, z: 0}
+    m_Extent: {x: 3.9374757, y: 5.4583654, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -852,6 +852,7 @@ GameObject:
   - component: {fileID: 347925223}
   - component: {fileID: 347925228}
   - component: {fileID: 347925229}
+  - component: {fileID: 347925230}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -983,6 +984,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &347925230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347925222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 209bfec5db8fc1145bb058d9000d0174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 29fa7227c1321c647b6d043c3ddadc3c, type: 3}
+  starSound: {fileID: 0}
 --- !u!1 &360615024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,7 +1240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 8300000, guid: 1a1615ea0b3252e4a8c58d5d7a3d02ce, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 45e6d47557f4b604ea0f5ca9f6975c12, type: 3}
   volume: 1
 --- !u!1 &383651770
 GameObject:
@@ -1501,7 +1517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 8300000, guid: 1a1615ea0b3252e4a8c58d5d7a3d02ce, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 45e6d47557f4b604ea0f5ca9f6975c12, type: 3}
   volume: 1
 --- !u!1 &424590704
 GameObject:
@@ -2062,7 +2079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 0}
+  buttonClickSound: {fileID: 8300000, guid: 45e6d47557f4b604ea0f5ca9f6975c12, type: 3}
   volume: 1
 --- !u!1 &517080493
 GameObject:
@@ -2426,7 +2444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brokenTeddy: {fileID: 8173769107573159802, guid: ed1f9a8bcdf08744787d8ec915c7b93f, type: 3}
   sparkle: {fileID: 1971700716}
-  tearSound: {fileID: 8300000, guid: b34c96a0cb3e87345ab9832b01668d2a, type: 3}
+  tearSound: {fileID: 8300000, guid: 90ed3878629a6cc449c878c544c65b0f, type: 3}
 --- !u!1 &611100399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,7 +2925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cheeseUI: {fileID: 2117317476}
   collectedCheeseImage: {fileID: 6064173656538733583, guid: ed1f9a8bcdf08744787d8ec915c7b93f, type: 3}
-  collectSound: {fileID: 8300000, guid: 4b02c62f8c14bf04e8f6967e3068b6c2, type: 3}
+  collectSound: {fileID: 8300000, guid: 366d43a69d457d64e89178d83d851377, type: 3}
 --- !u!212 &768672193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3227,7 +3245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishUI: {fileID: 931251581}
   collectedFishImage: {fileID: -5251394785359916755, guid: ed1f9a8bcdf08744787d8ec915c7b93f, type: 3}
-  collectSound: {fileID: 8300000, guid: 4b02c62f8c14bf04e8f6967e3068b6c2, type: 3}
+  collectSound: {fileID: 8300000, guid: 366d43a69d457d64e89178d83d851377, type: 3}
 --- !u!212 &860330905
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3927,7 +3945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 8300000, guid: 1a1615ea0b3252e4a8c58d5d7a3d02ce, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: b2cb8023007d9ca43998f4114dd794de, type: 3}
   volume: 1
 --- !u!1 &904057397
 GameObject:
@@ -4432,8 +4451,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00049999356, y: -0.13370001, z: 0}
-    m_Extent: {x: 0.5638, y: 0.8154, z: 0}
+    m_Center: {x: 0.0013172925, y: -0.13376105, z: 0}
+    m_Extent: {x: 0.56288266, y: 0.81366104, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -4773,7 +4792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 0}
+  buttonClickSound: {fileID: 0}
   volume: 1
 --- !u!1 &1102681158
 GameObject:
@@ -5168,7 +5188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 8300000, guid: 1a1615ea0b3252e4a8c58d5d7a3d02ce, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: b2cb8023007d9ca43998f4114dd794de, type: 3}
   volume: 1
 --- !u!1 &1159173302
 GameObject:
@@ -5328,7 +5349,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 8300000, guid: 1a1615ea0b3252e4a8c58d5d7a3d02ce, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 45e6d47557f4b604ea0f5ca9f6975c12, type: 3}
   volume: 1
 --- !u!1 &1178804012
 GameObject:
@@ -5710,7 +5732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850fa1178df038d4fa33e05797dc9a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splashSound: {fileID: 8300000, guid: 46ebf8d6d65139c489c74313f33324ad, type: 3}
+  splashSound: {fileID: 8300000, guid: f1425bdb5e5f0634fad599c52f68580c, type: 3}
 --- !u!68 &1303287105
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -5817,6 +5839,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3079733645490707589, guid: b52d86954212efd4d8e65a68dfbf245d, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6606447802350429106, guid: b52d86954212efd4d8e65a68dfbf245d, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -5986,7 +6012,7 @@ MonoBehaviour:
   endCanvas: {fileID: 215313570}
   endAnimation: {fileID: 2143054290}
   starTime: 0.5
-  startSound: {fileID: 8300000, guid: b54e2d3a89dbb2d4a98ea29a163f2268, type: 3}
+  startSound: {fileID: 8300000, guid: 5615ef0b423d1c94ab5c6282e4d6d5df, type: 3}
 --- !u!4 &1376750137
 Transform:
   m_ObjectHideFlags: 0
@@ -8298,8 +8324,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 3.1047997, y: 0.1971085, z: 0}
-    m_Extent: {x: 7.8985, y: 5.6325912, z: 0}
+    m_Center: {x: 3.1033437, y: 0.19267607, z: 0}
+    m_Extent: {x: 7.896656, y: 5.628159, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8940,8 +8966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209bfec5db8fc1145bb058d9000d0174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: c9b7d5089301bc441a1334b4a1b605f4, type: 3}
-  starSound: {fileID: 8300000, guid: c379a5a9fd0635947a6a18f6e55893c5, type: 3}
+  sound: {fileID: 8300000, guid: a476e0ddf243a5041bd4db541351a5be, type: 3}
+  starSound: {fileID: 8300000, guid: 585625080ce2f2640abedc347d1c07dc, type: 3}
 --- !u!1001 &237075000958976068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9217,6 +9243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1963970299}
     m_Modifications:
+    - target: {fileID: -8067680814027634557, guid: cb7fc2f226b22ee47af8bd453d6d537c, type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 366d43a69d457d64e89178d83d851377, type: 3}
     - target: {fileID: 5933099114449375491, guid: cb7fc2f226b22ee47af8bd453d6d537c, type: 3}
       propertyPath: m_Name
       value: Key

@@ -8,7 +8,6 @@ public class FreddieMovement : Movement
     [SerializeField] float jumpVelocity;
     [SerializeField] float coyoteTime;
     [SerializeField] float jumpBufferTime;
-    [SerializeField] AudioClip jumpSound;
 
     GameObject currentOneWayPlatform;
     BoxCollider2D playerCollider;
@@ -16,6 +15,12 @@ public class FreddieMovement : Movement
     float jumpBufferCounter;
     bool isHolding;
     bool hasJumped = false;
+
+    [SerializeField] AudioClip jumpSound;
+
+    // randomise walking audio here
+
+
     void OnJump(InputValue v)
     {
         if (isAlive)

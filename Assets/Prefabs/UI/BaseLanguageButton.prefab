@@ -190,8 +190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03631b6e57ca10f4eb9d74588682a524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonHoverSound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
-  buttonClickSound: {fileID: 8300000, guid: c37a90d63c0c06a4cb6fa91f44be9e6e, type: 3}
+  buttonHoverSound: {fileID: 8300000, guid: 1a1615ea0b3252e4a8c58d5d7a3d02ce, type: 3}
+  buttonClickSound: {fileID: 8300000, guid: 1a1615ea0b3252e4a8c58d5d7a3d02ce, type: 3}
   volume: 1
 --- !u!114 &2839809882395490501
 MonoBehaviour:
