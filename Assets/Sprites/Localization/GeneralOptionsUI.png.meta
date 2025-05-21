@@ -1,0 +1,1346 @@
+fileFormatVersion: 2
+guid: b628487355605fd42b497b7bee14a440
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1234754552590518060
+    second: GeneralOptionsUI_0
+  - first:
+      213: 1084516761444840700
+    second: GeneralOptionsUI_1
+  - first:
+      213: 8089129986618518299
+    second: GeneralOptionsUI_2
+  - first:
+      213: 5315416869447865572
+    second: GeneralOptionsUI_3
+  - first:
+      213: -4319403352741366838
+    second: GeneralOptionsUI_4
+  - first:
+      213: -9155157272060228673
+    second: GeneralOptionsUI_5
+  - first:
+      213: 543278908896423010
+    second: GeneralOptionsUI_6
+  - first:
+      213: -2342874880067929229
+    second: GeneralOptionsUI_7
+  - first:
+      213: -8379810781721549912
+    second: GeneralOptionsUI_8
+  - first:
+      213: -4703380236599857316
+    second: GeneralOptionsUI_9
+  - first:
+      213: 502344814028671585
+    second: GeneralOptionsUI_10
+  - first:
+      213: 104878772247994856
+    second: GeneralOptionsUI_11
+  - first:
+      213: 3156340222018071907
+    second: GeneralOptionsUI_12
+  - first:
+      213: 4700984933588460537
+    second: GeneralOptionsUI_13
+  - first:
+      213: 8938635427285243587
+    second: GeneralOptionsUI_14
+  - first:
+      213: 5999926096359641287
+    second: GeneralOptionsUI_15
+  - first:
+      213: -1693083347580158954
+    second: GeneralOptionsUI_16
+  - first:
+      213: 4391598526235529716
+    second: GeneralOptionsUI_17
+  - first:
+      213: -6659586645839922092
+    second: GeneralOptionsUI_18
+  - first:
+      213: 1900615364109486903
+    second: GeneralOptionsUI_19
+  - first:
+      213: -5364114374139786388
+    second: GeneralOptionsUI_20
+  - first:
+      213: -7857539728527981727
+    second: GeneralOptionsUI_21
+  - first:
+      213: -6557013549860915781
+    second: GeneralOptionsUI_22
+  - first:
+      213: 712692225616895624
+    second: GeneralOptionsUI_23
+  - first:
+      213: -148552882215800065
+    second: GeneralOptionsUI_24
+  - first:
+      213: 7689013950917580525
+    second: GeneralOptionsUI_25
+  - first:
+      213: 1375860542889595641
+    second: GeneralOptionsUI_26
+  - first:
+      213: 7682951082612241299
+    second: GeneralOptionsUI_27
+  - first:
+      213: 7077881029229106045
+    second: GeneralOptionsUI_28
+  - first:
+      213: 3026862697498768954
+    second: GeneralOptionsUI_29
+  - first:
+      213: -6719576176131062795
+    second: GeneralOptionsUI_30
+  - first:
+      213: -191551845237500637
+    second: GeneralOptionsUI_31
+  - first:
+      213: -5602986271455060503
+    second: GeneralOptionsUI_32
+  - first:
+      213: 4000553933505779029
+    second: GeneralOptionsUI_33
+  - first:
+      213: 2533812481219572459
+    second: GeneralOptionsUI_34
+  - first:
+      213: -334733130047984410
+    second: GeneralOptionsUI_35
+  - first:
+      213: 5520976568882821306
+    second: GeneralOptionsUI_36
+  - first:
+      213: 6676149509318224999
+    second: GeneralOptionsUI_37
+  - first:
+      213: -962486149200344692
+    second: GeneralOptionsUI_38
+  - first:
+      213: 2952772440549079201
+    second: GeneralOptionsUI_39
+  - first:
+      213: -5513457184959274306
+    second: GeneralOptionsUI_40
+  - first:
+      213: -9004872565772442705
+    second: GeneralOptionsUI_41
+  - first:
+      213: 1438559722603535474
+    second: GeneralOptionsUI_42
+  - first:
+      213: -3761432796840238890
+    second: GeneralOptionsUI_43
+  - first:
+      213: -7439414934544783851
+    second: GeneralOptionsUI_44
+  - first:
+      213: -9022727823272363491
+    second: GeneralOptionsUI_45
+  - first:
+      213: -1002631537203584825
+    second: GeneralOptionsUI_46
+  - first:
+      213: -7781594922941525553
+    second: GeneralOptionsUI_47
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GeneralOptionsUI_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 133
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d8bb04c6454ddee0800000000000000
+      internalID: -1234754552590518060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 132
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf470ee9f3afc0f00800000000000000
+      internalID: 1084516761444840700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 130
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b6b526ddc524070800000000000000
+      internalID: 8089129986618518299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 128
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e41f800b7724c940800000000000000
+      internalID: 5315416869447865572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 131
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3383e29856e04c0800000000000000
+      internalID: -4319403352741366838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 131
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb040897f852f080800000000000000
+      internalID: -9155157272060228673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 133
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cabba0a4d1a8700800000000000000
+      internalID: 543278908896423010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 130
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b7d5ca5bf6c7fd0800000000000000
+      internalID: -2342874880067929229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3af7efd7ee4bb80800000000000000
+      internalID: -8379810781721549912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_9
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f6fd9289c3abeb0800000000000000
+      internalID: -4703380236599857316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a40f262ffa8f600800000000000000
+      internalID: 502344814028671585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e1225c00ba947100800000000000000
+      internalID: 104878772247994856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d2aab75b29dcb20800000000000000
+      internalID: 3156340222018071907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3e005e3e04d3140800000000000000
+      internalID: 4700984933588460537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c61f0cef896c0c70800000000000000
+      internalID: 8938635427285243587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_15
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0dc14eef4044350800000000000000
+      internalID: 5999926096359641287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61cfa5c6aa5f088e0800000000000000
+      internalID: -1693083347580158954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_17
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 101
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1d568879712fc30800000000000000
+      internalID: 4391598526235529716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45cb6c7ca356493a0800000000000000
+      internalID: -6659586645839922092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b45609a97506a10800000000000000
+      internalID: 1900615364109486903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_20
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bc4d2a566de85b0800000000000000
+      internalID: -5364114374139786388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_21
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16302987f3964f290800000000000000
+      internalID: -7857539728527981727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_22
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5fd1dbaeec005a0800000000000000
+      internalID: -6557013549860915781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_23
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ed31e9dcdf3e900800000000000000
+      internalID: 712692225616895624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2ba21d0fb30fdf0800000000000000
+      internalID: -148552882215800065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_25
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de61771437dd4ba60800000000000000
+      internalID: 7689013950917580525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_26
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f21967cfd9081310800000000000000
+      internalID: 1375860542889595641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_27
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 69
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3933ec9bd435f9a60800000000000000
+      internalID: 7682951082612241299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d735dadbb4fa93260800000000000000
+      internalID: 7077881029229106045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a367b4c1693910a20800000000000000
+      internalID: 3026862697498768954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_30
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3c784d1154fb2a0800000000000000
+      internalID: -6719576176131062795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_31
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3255c849c98775df0800000000000000
+      internalID: -191551845237500637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_32
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edd7880ca13e32b0800000000000000
+      internalID: -5602986271455060503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_33
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555576f4b92d48730800000000000000
+      internalID: 4000553933505779029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_34
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be23b86e609e92320800000000000000
+      internalID: 2533812481219572459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_35
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec6fe0edf9ca5bf0800000000000000
+      internalID: -334733130047984410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_36
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8f38120f27e9c40800000000000000
+      internalID: 5520976568882821306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_37
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 37
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76caf426b9276ac50800000000000000
+      internalID: 6676149509318224999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c890eaf52ff84a2f0800000000000000
+      internalID: -962486149200344692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_39
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8bd75e3ea5af820800000000000000
+      internalID: 2952772440549079201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_40
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb26d2ed6e34c73b0800000000000000
+      internalID: -5513457184959274306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3297d7c14480380800000000000000
+      internalID: -9004872565772442705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_42
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27cd7f5227ac6f310800000000000000
+      internalID: 1438559722603535474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_43
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d065d9dcc4bccbc0800000000000000
+      internalID: -3761432796840238890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_44
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516e8b16883e1c890800000000000000
+      internalID: -7439414934544783851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_45
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a31d469d4d8c280800000000000000
+      internalID: -9022727823272363491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_46
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c06068ddefe512f0800000000000000
+      internalID: -1002631537203584825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_47
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1561075a8320490800000000000000
+      internalID: -7781594922941525553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GeneralOptionsUI_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 130
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6caf8f6e4f03743b2d471dabbce94e
+      internalID: 751035639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: be20878ad46a1ce4da3e2b4c7c9ee143
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GeneralOptionsUI_0: -1234754552590518060
+      GeneralOptionsUI_1: 1084516761444840700
+      GeneralOptionsUI_10: 502344814028671585
+      GeneralOptionsUI_11: 104878772247994856
+      GeneralOptionsUI_12: 3156340222018071907
+      GeneralOptionsUI_13: 4700984933588460537
+      GeneralOptionsUI_14: 8938635427285243587
+      GeneralOptionsUI_15: 5999926096359641287
+      GeneralOptionsUI_16: -1693083347580158954
+      GeneralOptionsUI_17: 4391598526235529716
+      GeneralOptionsUI_18: -6659586645839922092
+      GeneralOptionsUI_19: 1900615364109486903
+      GeneralOptionsUI_2: 8089129986618518299
+      GeneralOptionsUI_20: -5364114374139786388
+      GeneralOptionsUI_21: -7857539728527981727
+      GeneralOptionsUI_22: -6557013549860915781
+      GeneralOptionsUI_23: 712692225616895624
+      GeneralOptionsUI_24: -148552882215800065
+      GeneralOptionsUI_25: 7689013950917580525
+      GeneralOptionsUI_26: 1375860542889595641
+      GeneralOptionsUI_27: 7682951082612241299
+      GeneralOptionsUI_28: 7077881029229106045
+      GeneralOptionsUI_29: 3026862697498768954
+      GeneralOptionsUI_3: 5315416869447865572
+      GeneralOptionsUI_30: -6719576176131062795
+      GeneralOptionsUI_31: -191551845237500637
+      GeneralOptionsUI_32: -5602986271455060503
+      GeneralOptionsUI_33: 4000553933505779029
+      GeneralOptionsUI_34: 2533812481219572459
+      GeneralOptionsUI_35: -334733130047984410
+      GeneralOptionsUI_36: 5520976568882821306
+      GeneralOptionsUI_37: 6676149509318224999
+      GeneralOptionsUI_38: -962486149200344692
+      GeneralOptionsUI_39: 2952772440549079201
+      GeneralOptionsUI_4: -4319403352741366838
+      GeneralOptionsUI_40: -5513457184959274306
+      GeneralOptionsUI_41: -9004872565772442705
+      GeneralOptionsUI_42: 1438559722603535474
+      GeneralOptionsUI_43: -3761432796840238890
+      GeneralOptionsUI_44: -7439414934544783851
+      GeneralOptionsUI_45: -9022727823272363491
+      GeneralOptionsUI_46: -1002631537203584825
+      GeneralOptionsUI_47: -7781594922941525553
+      GeneralOptionsUI_48: 751035639
+      GeneralOptionsUI_5: -9155157272060228673
+      GeneralOptionsUI_6: 543278908896423010
+      GeneralOptionsUI_7: -2342874880067929229
+      GeneralOptionsUI_8: -8379810781721549912
+      GeneralOptionsUI_9: -4703380236599857316
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

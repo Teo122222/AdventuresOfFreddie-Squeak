@@ -20,7 +20,6 @@ public class MusicManager : MonoBehaviour
     }
     public void PlaySoundClip(AudioClip clip, Transform spawnPoint, float volume) 
     {
-        Debug.Log("Playing");
         AudioSource audioSource = Instantiate(soundObject, spawnPoint.position, Quaternion.identity);
         audioSource.clip = clip;
         audioSource.volume = volume;

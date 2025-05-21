@@ -32,14 +32,29 @@ public class GameManager : MonoBehaviour
     bool hasFish = false;
     bool hasCheese = false;
 
+    public static GameManager Instance;
 
-    void Start()
+    void Awake()
     {
+        if (Instance != null && this.gameObject != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+        
         Freddie = PlayerInput.Instantiate(FreddiePrefab, controlScheme: "LeftKeyboard", pairWithDevice: Keyboard.current).gameObject;
         Squeak = PlayerInput.Instantiate(SqueakPrefab, controlScheme: "RightKeyboard", pairWithDevice: Keyboard.current).gameObject;
         freddieCollider = Freddie.GetComponent<Collider2D>();
         squeakCollider = Squeak.GetComponent<Collider2D>();
+    }
+
+    void Start()
+    {
         MusicManager.Instance.PlaySoundClip(startSound, transform, 0.8f);
+        TutorialMenu.Instance.OpenTutorial();
     }
 
     void Update()
@@ -62,20 +77,35 @@ public class GameManager : MonoBehaviour
         if(Freddie != null) Freddie.GetComponent<Movement>().Die();
         fadeAnimation.SetTrigger("StartTransistion");
         yield return new WaitForSecondsRealtime(0.5f);
-        SceneManager.LoadScene(index);
+        SceneManager.LoadScene(index);  
     }
 
     public void BackToMainMenu()
     {
         isRestarting = true;
+        TutorialMenu.Instance.hasPlayedBefore = false;
         StartCoroutine(PlayAnimationAndLoadLevel(1));
     }
 
     public void PauseGame()
     {
+        if(TutorialMenu.Instance.transform.GetChild(0).gameObject.activeSelf) return;
+
         Squeak.GetComponent<Movement>().Die();
         Freddie.GetComponent<Movement>().Die();
         pauseCanvas.SetActive(true);
+    }
+
+    public void PauseGameStart()
+    {
+        Squeak.GetComponent<Movement>().Die();
+        Freddie.GetComponent<Movement>().Die();
+    }
+
+    public void ResumeGameStart()
+    {
+        Squeak.GetComponent<Movement>().UnDie();
+        Freddie.GetComponent<Movement>().UnDie();
     }
 
     public void ResumeGame()
